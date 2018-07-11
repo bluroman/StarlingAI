@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:26341ebe7c44500d55e58257c3f9a89c:e452dedf852b3d3ed7d0a50ce2716ff9:628d44f20a20d4ab7a3617802fac7201$ -->
-<TextureAtlas imagePath="atlas.png" width="608" height="287">
-    <SubTexture name="button" x="516" y="2" width="90" height="90"/>
-    <SubTexture name="starling_rocket" x="2" y="2" width="512" height="283"/>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:fc1a96b97739e075af970cb74c59fd3b:8ef86517c7a828961f511b017d94baf5:c9118971bd660fbbe64ea9e9857517d0$ -->
+<TextureAtlas imagePath="atlas.atf" width="512" height="512">
+    <SubTexture name="button" x="231" y="114" width="76" height="76"/>
+    <SubTexture name="kamicrashi_1" x="1" y="1" width="36" height="111"/>
+    <SubTexture name="kamicrashi_2" x="160" y="1" width="39" height="111"/>
+    <SubTexture name="kamicrashi_3" x="242" y="1" width="57" height="111"/>
+    <SubTexture name="kamicrashi_4" x="77" y="114" width="74" height="111"/>
+    <SubTexture name="kamicrashi_5" x="88" y="227" width="85" height="111"/>
+    <SubTexture name="kamicrashi_6" x="352" y="227" width="88" height="111"/>
+    <SubTexture name="kamicrashi_7" x="1" y="227" width="85" height="111"/>
+    <SubTexture name="kamicrashi_8" x="153" y="114" width="76" height="111"/>
+    <SubTexture name="kamicrashi_9" x="420" y="1" width="58" height="111"/>
+    <SubTexture name="kamicrashi_10" x="201" y="1" width="39" height="111"/>
+    <SubTexture name="kamicrashi_11" x="39" y="1" width="37" height="111"/>
+    <SubTexture name="kamicrashi_12" x="119" y="1" width="39" height="111"/>
+    <SubTexture name="kamicrashi_13" x="301" y="1" width="57" height="111"/>
+    <SubTexture name="kamicrashi_14" x="1" y="114" width="74" height="111"/>
+    <SubTexture name="kamicrashi_15" x="387" y="114" width="85" height="111"/>
+    <SubTexture name="kamicrashi_16" x="262" y="227" width="88" height="111"/>
+    <SubTexture name="kamicrashi_17" x="175" y="227" width="85" height="111"/>
+    <SubTexture name="kamicrashi_18" x="309" y="114" width="76" height="111"/>
+    <SubTexture name="kamicrashi_19" x="360" y="1" width="58" height="111"/>
+    <SubTexture name="kamicrashi_20" x="78" y="1" width="39" height="111"/>
+    <SubTexture name="play_over" x="1" y="340" width="101" height="68" frameX="0" frameY="-2" frameWidth="124" frameHeight="70"/>
 </TextureAtlas>
