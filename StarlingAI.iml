@@ -18,6 +18,7 @@
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets/icons/Assets.car" path-in-package="Assets.car" />
           </files-to-package>
           <AirSigningOptions keystore-path="G:/CertificateNProvisionIOS/ios_dev_hoonnam.p12" provisioning-profile-path="G:/CertificateNProvisionIOS/TestingAppD.mobileprovision" />
         </packaging-ios>

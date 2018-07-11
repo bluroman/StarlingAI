@@ -38,10 +38,10 @@
     <!-- Place the icons in a 'source path' (e.g. in the 'src' directory). -->
     <!-- iPhone: 57x57, iPhone HD: 114x114, iPad: 72x72, iPad HD: 144x144 -->
     <icon>
-        <image57x57>icon57.png</image57x57>
-        <image72x72>icon72.png</image72x72>
-        <image114x114>icon114.png</image114x114>
-        <image144x144>icon144.png</image144x144>
+        <image57x57>assets/icons/Icon.png</image57x57>
+        <image72x72>assets/icons/Icon-72.png</image72x72>
+        <image114x114>assets/icons/Icon@2x.png</image114x114>
+        <image144x144>assets/icons/Icon-144.png</image144x144>
     </icon>
 
     <!-- iOS specific capabilities -->
@@ -59,6 +59,7 @@
 
         <!-- Display Resolution for the app ("standard" or "high"). Optional. Default "standard" -->
         <requestedDisplayResolution>high</requestedDisplayResolution>
+        <assetsCar>Assets.car</assetsCar>
     </iPhone>
 
     <!-- Android specific capabilities -->
