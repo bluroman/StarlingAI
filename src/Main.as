@@ -21,7 +21,7 @@ import starling.utils.SystemUtil;
 import utils.ProgressBar;
 import utils.ScreenSetup;
 
-[SWF(width="320", height="480", frameRate="30", backgroundColor="#badefe")]
+[SWF(width="320", height="480", frameRate="30", backgroundColor="#000000")]
 public class Main extends Sprite
 {
     [Embed(source="/assets/fonts/Ubuntu-R.ttf", embedAsCFF="false", fontFamily="Ubuntu")]

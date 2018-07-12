@@ -8,6 +8,12 @@
             <entry library-name="Starling-Framework" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="Starling-Extension-Particle-System" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="dabac2ab-f570-47bd-ba51-6aef878e3687">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler_30_0_0_107" />
         </dependencies>
@@ -35,5 +41,17 @@
     <orderEntry type="jdk" jdkName="AIRSDK_Compiler_30_0_0_107" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Starling-Framework" level="application" />
+    <orderEntry type="library" exported="" name="Starling-Extension-Particle-System" level="application" />
+    <orderEntry type="library" exported="" name="SoundAS" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="dabac2ab-f570-47bd-ba51-6aef878e3687" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AS3_Library/SoundAS/swc/SoundAS.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -3,6 +3,8 @@ package
     import starling.animation.Transitions;
     import starling.core.Starling;
     import starling.display.Image;
+import starling.display.Quad;
+import starling.display.Sprite3D;
 import starling.events.Event;
 import starling.events.Touch;
 import starling.events.TouchEvent;
@@ -25,6 +27,7 @@ import utils.Vector2D;
 
         /** Touch Y position of the mouse/finger. */
         private var touchY:Number = 100;
+        private var test3d:Sprite3D;
 
         public function Game()
         { }
@@ -33,12 +36,30 @@ import utils.Vector2D;
         {
             super.init(width, height);
 
+            //test3d = new Sprite3D();
+            var background:Quad = createBackground(width - 10, height - 10, 0x80b0, 0xa7ff);
+            addChild(background);
+            background.x = 5;
+            background.y = 5;
+            //background.alignPivot();
+            //test3d.addChild(background);
+            //test3d.alignPivot();
+            //test3d.rotationX = -0.6;
+            //addChild(test3d);
+
             _vehicle = new SteeredVehicle(this);
             addChild(_vehicle);
             _vehicle.x = 100;
             _vehicle.y = 100;
             //addEventListener(Event.ADDED_TO_STAGE, onCompleteHandler);
             onCompleteHandler();
+        }
+        private function createBackground(width:int, height:int, colorA:uint, colorB:uint):Quad
+        {
+            var quad:Quad = new Quad(width, height, colorA);
+            quad.setVertexColor(2, colorB);
+            quad.setVertexColor(3, colorB);
+            return quad;
         }
         private function handleMouseEvents(e:TouchEvent)
         {
@@ -61,7 +82,7 @@ import utils.Vector2D;
 
         public function update(event:Event):void
         {
-            _vehicle.arrive(new Vector2D(touchX, touchY));
+            _vehicle.wander();
             _vehicle.update();
         }
     }

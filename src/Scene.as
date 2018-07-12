@@ -10,13 +10,13 @@
 
 package
 {
-    import starling.display.Sprite;
+    import starling.display.Sprite3D;
 
     /** A Scene represents a full-screen, high-level element of your game.
      *  The "Menu" and "Game" classes inherit from this class.
      *  The "Root" class allows you to navigate between scene objects.
      */
-    public class Scene extends Sprite
+    public class Scene extends Sprite3D
     {
         protected var _width:Number;
         protected var _height:Number;

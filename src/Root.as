@@ -21,6 +21,7 @@ package
         {
             addEventListener(Menu.START_GAME, onStartGame);
             addEventListener(Game.GAME_OVER,  onGameOver);
+            addEventListener(Menu.SPACE_SHIP, onSpaceShip);
             
             // not more to do here -- Startup will call "start" immediately.
         }
@@ -75,6 +76,12 @@ package
         {
             trace("Game starts! Mode: " + gameMode);
             showScene(Game);
+        }
+
+        private function onSpaceShip(event:Event):void
+        {
+            trace("Space Ship starts");
+            showScene(Play);
         }
         
         public static function get assets():AssetManager { return sAssets; }

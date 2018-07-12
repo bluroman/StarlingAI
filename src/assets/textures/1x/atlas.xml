@@ -1,27 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
-<!-- $TexturePacker:SmartUpdate:fc1a96b97739e075af970cb74c59fd3b:8ef86517c7a828961f511b017d94baf5:c9118971bd660fbbe64ea9e9857517d0$ -->
-<TextureAtlas imagePath="atlas.atf" width="256" height="256">
-    <SubTexture name="button" x="1" y="1" width="38" height="38"/>
-    <SubTexture name="kamicrashi_1" x="41" y="1" width="18" height="56"/>
-    <SubTexture name="kamicrashi_2" x="61" y="1" width="20" height="56"/>
-    <SubTexture name="kamicrashi_3" x="83" y="1" width="29" height="56"/>
-    <SubTexture name="kamicrashi_4" x="114" y="1" width="37" height="56"/>
-    <SubTexture name="kamicrashi_5" x="153" y="1" width="43" height="56"/>
-    <SubTexture name="kamicrashi_6" x="198" y="1" width="44" height="56"/>
-    <SubTexture name="kamicrashi_7" x="1" y="59" width="43" height="56"/>
-    <SubTexture name="kamicrashi_8" x="46" y="59" width="38" height="56"/>
-    <SubTexture name="kamicrashi_9" x="86" y="59" width="29" height="56"/>
-    <SubTexture name="kamicrashi_10" x="117" y="59" width="20" height="56"/>
-    <SubTexture name="kamicrashi_11" x="139" y="59" width="19" height="56"/>
-    <SubTexture name="kamicrashi_12" x="160" y="59" width="20" height="56"/>
-    <SubTexture name="kamicrashi_13" x="182" y="59" width="29" height="56"/>
-    <SubTexture name="kamicrashi_14" x="213" y="59" width="37" height="56"/>
-    <SubTexture name="kamicrashi_15" x="1" y="117" width="43" height="56"/>
-    <SubTexture name="kamicrashi_16" x="46" y="117" width="44" height="56"/>
-    <SubTexture name="kamicrashi_17" x="92" y="117" width="43" height="56"/>
-    <SubTexture name="kamicrashi_18" x="137" y="117" width="38" height="56"/>
-    <SubTexture name="kamicrashi_19" x="177" y="117" width="29" height="56"/>
-    <SubTexture name="kamicrashi_20" x="208" y="117" width="20" height="56"/>
-    <SubTexture name="play_over" x="1" y="175" width="51" height="35" frameX="0" frameY="0" frameWidth="62" frameHeight="35"/>
+<!-- $TexturePacker:SmartUpdate:76d4b0deecefb2a40233550f68d3c484:dc60b11c26befcbb29aecf82f96408d2:c9118971bd660fbbe64ea9e9857517d0$ -->
+<TextureAtlas imagePath="atlas.atf" width="512" height="512">
+    <SubTexture name="button" x="226" y="169" width="38" height="38"/>
+    <SubTexture name="kamicrashi_1" x="480" y="169" width="18" height="56"/>
+    <SubTexture name="kamicrashi_2" x="375" y="227" width="20" height="56"/>
+    <SubTexture name="kamicrashi_3" x="397" y="227" width="29" height="56"/>
+    <SubTexture name="kamicrashi_4" x="336" y="227" width="37" height="56"/>
+    <SubTexture name="kamicrashi_5" x="260" y="227" width="43" height="56"/>
+    <SubTexture name="kamicrashi_6" x="129" y="227" width="44" height="56"/>
+    <SubTexture name="kamicrashi_7" x="215" y="227" width="43" height="56"/>
+    <SubTexture name="kamicrashi_8" x="175" y="227" width="38" height="56"/>
+    <SubTexture name="kamicrashi_9" x="266" y="169" width="29" height="56"/>
+    <SubTexture name="kamicrashi_10" x="22" y="227" width="20" height="56"/>
+    <SubTexture name="kamicrashi_11" x="1" y="227" width="19" height="56"/>
+    <SubTexture name="kamicrashi_12" x="458" y="169" width="20" height="56"/>
+    <SubTexture name="kamicrashi_13" x="427" y="169" width="29" height="56"/>
+    <SubTexture name="kamicrashi_14" x="297" y="169" width="37" height="56"/>
+    <SubTexture name="kamicrashi_15" x="382" y="169" width="43" height="56"/>
+    <SubTexture name="kamicrashi_16" x="336" y="169" width="44" height="56"/>
+    <SubTexture name="kamicrashi_17" x="44" y="227" width="43" height="56"/>
+    <SubTexture name="kamicrashi_18" x="89" y="227" width="38" height="56"/>
+    <SubTexture name="kamicrashi_19" x="305" y="227" width="29" height="56"/>
+    <SubTexture name="kamicrashi_20" x="428" y="227" width="20" height="56"/>
+    <SubTexture name="spaceship/spaceship0001" x="1" y="169" width="42" height="34" frameX="-15" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0002" x="444" y="133" width="43" height="34" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0003" x="45" y="169" width="43" height="34" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0004" x="181" y="169" width="43" height="34" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0005" x="90" y="169" width="43" height="34" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0006" x="135" y="169" width="44" height="34" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0007" x="1" y="133" width="44" height="33" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0008" x="361" y="98" width="43" height="33" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0009" x="93" y="133" width="43" height="33" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0010" x="47" y="133" width="44" height="33" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0011" x="226" y="98" width="44" height="32" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0012" x="181" y="98" width="43" height="32" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0013" x="453" y="64" width="44" height="32" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0014" x="1" y="98" width="44" height="32" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0015" x="184" y="64" width="43" height="31" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0016" x="139" y="64" width="43" height="31" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0017" x="47" y="64" width="44" height="31" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0018" x="93" y="64" width="44" height="31" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0019" x="318" y="32" width="43" height="30" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0020" x="183" y="32" width="43" height="30" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0021" x="1" y="64" width="44" height="30" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0022" x="363" y="32" width="44" height="30" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0023" x="458" y="1" width="43" height="29" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0024" x="47" y="32" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0025" x="412" y="1" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0026" x="1" y="32" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0027" x="1" y="1" width="43" height="28" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0028" x="138" y="1" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0029" x="92" y="1" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0030" x="230" y="1" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0031" x="276" y="1" width="43" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0032" x="184" y="1" width="44" height="28" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0033" x="46" y="1" width="44" height="28" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0034" x="138" y="32" width="43" height="29" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0035" x="321" y="1" width="43" height="29" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0036" x="366" y="1" width="44" height="29" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0037" x="93" y="32" width="43" height="29" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0038" x="273" y="32" width="43" height="30" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0039" x="409" y="32" width="43" height="30" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0040" x="228" y="32" width="43" height="30" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0041" x="454" y="32" width="43" height="30" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0042" x="364" y="64" width="43" height="31" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0043" x="274" y="64" width="43" height="31" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0044" x="319" y="64" width="43" height="31" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0045" x="229" y="64" width="43" height="31" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0046" x="409" y="64" width="42" height="32" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0047" x="47" y="98" width="43" height="32" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0048" x="92" y="98" width="43" height="32" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0049" x="137" y="98" width="42" height="32" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0050" x="138" y="133" width="43" height="33" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0051" x="272" y="98" width="43" height="33" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0052" x="317" y="98" width="42" height="33" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0053" x="451" y="98" width="42" height="33" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0054" x="406" y="98" width="43" height="33" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0055" x="226" y="133" width="42" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0056" x="313" y="133" width="42" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0057" x="357" y="133" width="42" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0058" x="270" y="133" width="41" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0059" x="183" y="133" width="41" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0060" x="401" y="133" width="41" height="34" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
 </TextureAtlas>
