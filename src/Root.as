@@ -6,7 +6,9 @@ package
     import starling.events.Event;
     import starling.events.ResizeEvent;
 
-    /** The Root class is the topmost display object in your game.
+import treefortress.sound.SoundAS;
+
+/** The Root class is the topmost display object in your game.
      *  It is responsible for switching between game and menu. For this, it listens to
      *  "START_GAME" and "GAME_OVER" events fired by the Menu and Game classes.
      *  In other words, this class is supposed to control the high level behaviour of your game.
@@ -22,6 +24,21 @@ package
             addEventListener(Menu.START_GAME, onStartGame);
             addEventListener(Game.GAME_OVER,  onGameOver);
             addEventListener(Menu.SPACE_SHIP, onSpaceShip);
+
+            SoundAS.loadSound("assets/audio/bubble_pop.mp3", "bubble_pop");
+            SoundAS.loadSound("assets/audio/bubble_spawn.mp3", "bubble_spawn");
+            SoundAS.loadSound("assets/audio/bubble_transfer.mp3", "bubble_transfer");
+            SoundAS.loadSound("assets/audio/explode1.mp3", "explode1");
+            SoundAS.loadSound("assets/audio/lose.mp3", "lose");
+            SoundAS.loadSound("assets/audio/playerhit.mp3", "playerhit");
+            SoundAS.loadSound("assets/audio/shot.mp3", "shot");
+            SoundAS.loadSound("assets/audio/shot1.mp3", "shot1");
+            SoundAS.loadSound("assets/audio/SoundExplosion.mp3", "SoundExplosion");
+            SoundAS.loadSound("assets/audio/win.mp3", "win");
+            SoundAS.loadSound("assets/audio/click.mp3", "click");
+            SoundAS.loadSound("assets/audio/shiplaunch.mp3", "shiplaunch");
+            SoundAS.loadSound("assets/audio/background.mp3", "background");
+            SoundAS.loadSound("assets/audio/Drone.mp3", "Drone");
             
             // not more to do here -- Startup will call "start" immediately.
         }

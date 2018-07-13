@@ -52,7 +52,7 @@ public class Play extends Scene {
                     touchX = _spaceShip.x;touchY = _spaceShip.y;
                     stage.addEventListener(TouchEvent.TOUCH, onTouch);
                 };
-        //SoundAS.playFx("shiplaunch");
+        SoundAS.playFx("shiplaunch");
         Starling.juggler.add(launchTween);
 
     }
@@ -97,8 +97,8 @@ public class Play extends Scene {
                     _spaceShip._shipImage.texture = Root.assets.getTexture("spaceship/spaceship" + zeroPad(frameNumber, 4));
                     _spaceShip._shipImage.readjustSize();
                     prevFrame = frameNumber;
-                    /*if(!SoundAS.getSound("Drone").isPlaying)
-                        SoundAS.playFx("Drone",.8);*/
+                    if(!SoundAS.getSound("Drone").isPlaying)
+                        SoundAS.playFx("Drone",.8);
                 }
             }
 
