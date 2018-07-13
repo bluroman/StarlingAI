@@ -15,6 +15,7 @@ import starling.events.Event;
     {
         public static const START_GAME:String = "startGame";
         public static const SPACE_SHIP:String = "SpaceShip";
+        public static const GAME_OVER:String = "gameOver";
 
         private var _textField:TextField;
         private var _menuButton:MenuButton;
@@ -70,6 +71,8 @@ import starling.events.Event;
                 dispatchEventWith(START_GAME, true, "classic");
             else if(button.text == "SpaceShip")
                     dispatchEventWith(SPACE_SHIP, true);
+            //else if(button.text == "")
+            //        dispatchEventWith(GAME_OVER, true, "score");
 
         }
     }

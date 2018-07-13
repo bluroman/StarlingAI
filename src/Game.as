@@ -36,6 +36,7 @@ import utils.Vector2D;
         {
             super.init(width, height);
 
+
             //test3d = new Sprite3D();
             var background:Quad = createBackground(width - 10, height - 10, 0x80b0, 0xa7ff);
             addChild(background);
@@ -46,6 +47,7 @@ import utils.Vector2D;
             //test3d.alignPivot();
             //test3d.rotationX = -0.6;
             //addChild(test3d);
+            addBackButton();
 
             _vehicle = new SteeredVehicle(this);
             addChild(_vehicle);
