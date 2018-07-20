@@ -5,6 +5,7 @@ package utils
 //import flash.display.Sprite;
 
 import starling.display.Image;
+import starling.display.MovieClip;
 
 import starling.display.Sprite;
 
@@ -24,10 +25,10 @@ public class SteeredVehicle extends Vehicle
 		private var _inSightDist:Number = 200;
 		private var _tooCloseDist:Number = 60;
 		
-		public function SteeredVehicle(home:Game)
+		public function SteeredVehicle()
 		{
 			_steeringForce = new Vector2D();
-			super(home);
+			super();
 		}
 		
 		public function set maxForce(value:Number):void

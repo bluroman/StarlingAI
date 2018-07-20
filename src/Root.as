@@ -1,12 +1,25 @@
 package
 {
-    import starling.assets.AssetManager;
+import screens.ScreenHome;
+import screens.ScreenLose;
+import screens.ScreenWin;
+
+import starling.animation.Transitions;
+
+import starling.animation.Tween;
+
+import starling.assets.AssetManager;
     import starling.core.Starling;
     import starling.display.Sprite;
     import starling.events.Event;
     import starling.events.ResizeEvent;
+import starling.text.BitmapFont;
+import starling.text.TextField;
+import starling.textures.Texture;
 
 import treefortress.sound.SoundAS;
+
+import utils.MenuButton;
 
 /** The Root class is the topmost display object in your game.
      *  It is responsible for switching between game and menu. For this, it listens to
@@ -18,12 +31,22 @@ import treefortress.sound.SoundAS;
         private static var sAssets:AssetManager;
 
         private var _activeScene:Scene;
+        private static var sMute:Boolean;
+        [Embed(source="../system/tomorrowpeople48.fnt", mimeType="application/octet-stream")]
+        public static const FontXml:Class;
+
+        [Embed(source="../system/tomorrowpeople48_0.png")]
+        public static const FontTexture:Class;
         
         public function Root()
         {
             addEventListener(Menu.START_GAME, onStartGame);
             addEventListener(Game.GAME_OVER,  onGameOver);
             addEventListener(Menu.SPACE_SHIP, onSpaceShip);
+            addEventListener(Menu.TEST_EFFECT, onTestEffect);
+            addEventListener(Menu.HOME_SCREEN, onHomeScreen);
+            addEventListener(Menu.WIN_SCREEN, onWinScreen);
+            addEventListener(Menu.LOSE_SCREEN, onLoseScreen);
 
             SoundAS.loadSound("assets/audio/bubble_pop.mp3", "bubble_pop");
             SoundAS.loadSound("assets/audio/bubble_spawn.mp3", "bubble_spawn");
@@ -41,6 +64,10 @@ import treefortress.sound.SoundAS;
             SoundAS.loadSound("assets/audio/Drone.mp3", "Drone");
             
             // not more to do here -- Startup will call "start" immediately.
+            var font:BitmapFont = new BitmapFont(Texture.fromEmbeddedAsset(FontTexture),
+                    XML(new FontXml()));
+
+            TextField.registerCompositor(font,Constants.DEFAULT_FONT_2);
         }
         
         public function start(assets:AssetManager):void
@@ -98,9 +125,40 @@ import treefortress.sound.SoundAS;
         private function onSpaceShip(event:Event):void
         {
             trace("Space Ship starts");
-            showScene(Play);
+            var screenTween:Tween = new Tween(_activeScene, 2.0, Transitions.EASE_OUT_BOUNCE);
+            screenTween.moveTo(0, -stage.stageHeight);
+            screenTween.fadeTo(0);
+            //screenTween.fadeTo(0);
+            screenTween.onComplete = function():void {
+                trace("Screen Transition Complete");
+                showScene(Play)};
+            Starling.juggler.add(screenTween);
+            //showScene(Play);
+        }
+        private function onTestEffect(event:Event):void
+        {
+            trace("Effect test");
+            showScene(TestEffect);
+        }
+
+        private function onHomeScreen(event:Event):void
+        {
+            trace("Home Screen");
+            showScene(ScreenHome);
+        }
+        private function onWinScreen(event:Event):void
+        {
+            trace("Win Screen");
+            showScene(ScreenWin);
+        }
+        private function onLoseScreen(event:Event):void
+        {
+            trace("Lose Screen");
+            showScene(ScreenLose);
         }
         
         public static function get assets():AssetManager { return sAssets; }
+        public static function set mute(yesNo:Boolean):void{sMute = yesNo;}
+        public static function get mute():Boolean{return sMute;}
     }
 }

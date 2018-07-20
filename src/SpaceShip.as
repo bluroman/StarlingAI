@@ -3,6 +3,7 @@
  */
 package {
 //import com.utils.ScoreKeeper;
+import utils.ScoreKeeper;
 import utils.Vector2D;
 
 import flash.display.Shape;
@@ -29,7 +30,7 @@ import treefortress.sound.SoundAS;
 use namespace SoundAS;
 
 public class SpaceShip extends Sprite {
-    //private var _scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
+    private var _scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
     private var _gameScope:Play;
 
     //private var _animExplosion:MovieClip;
@@ -122,16 +123,20 @@ public class SpaceShip extends Sprite {
         addChild(_explosionParticle);
         Starling.juggler.add(_explosionParticle);
 
-        //SoundAS.playFx("explode1");
+        SoundAS.playFx("explode1");
     }
     private function game_ReSetup():void
     {
-        /*_scoreKeeper.livesLost = 1;
+        _scoreKeeper.livesLost = 1;
 
         if(_scoreKeeper.lives > 0)
         {
             re_Setup();
-        }*/
+        }
+        else
+        {
+            dispatchEventWith(Menu.LOSE_SCREEN, true);
+        }
     }
 
     private function explosionCompletedHandler( event:Event ):void
@@ -141,12 +146,12 @@ public class SpaceShip extends Sprite {
         Starling.juggler.remove( _explosionParticle );
         removeChild( _explosionParticle, true );
         _explosionParticle = null;
-        /*_scoreKeeper.livesLost = 1;
+        _scoreKeeper.livesLost = 1;
 
         if(_scoreKeeper.lives > 0)
         {
             re_Setup();
-        }*/
+        }
         //remove();
     }
     public function re_Setup():void

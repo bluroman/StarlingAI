@@ -1,0 +1,1 @@
+﻿package utils{	public class RandomNumberRange	{		public function RandomNum():void{}				public static function getRandomInt( start:int, end:int ):int		{			return Math.round(start +(Math.random() * (end - start)));		}				public static function getRandomNum( start:Number, end:Number ):Number		{			return start +(Math.random() * (end - start));		}	}	}

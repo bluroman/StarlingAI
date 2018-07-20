@@ -4,6 +4,7 @@ package utils
 //import com.screens.ScreenHome;
 
 import starling.core.Starling;
+import starling.display.MovieClip;
 import starling.utils.deg2rad;
 
 //import starling.display.Shape;
@@ -18,52 +19,48 @@ import starling.utils.rad2deg;
 	{
 		protected var _edgeBehavior:String = BOUNCE;
 		protected var _mass:Number = 1.0;
-		protected var _maxSpeed:Number = 2;
+		protected var _maxSpeed:Number = 10;
 		protected var _position:Vector2D;
 		protected var _velocity:Vector2D;
+        protected var _gameScope:Scene;
 		
 		// potential edge behaviors
 		public static const WRAP:String = "wrap";
 		public static const BOUNCE:String = "bounce";
-		//private var _shape:Shape;
-        private var _kamicrashi:Kamicrashi;
-        private var _gameScope:Game;
+
+        //private var _movieClip:MovieClip;
+        //private var _sprite:Sprite;
+        //private var _gameScope:Scene;
 		
 		/**
 		 * Constructor.
 		 */
-		public function Vehicle(home:Game)
+		public function Vehicle()
 		{
-            _gameScope = home;
+            //_gameScope = playGround;
 			_position = new Vector2D();
 			_velocity = new Vector2D();
-			_kamicrashi = new Kamicrashi();
-            Starling.juggler.add(_kamicrashi);
-			addChild(_kamicrashi);
-            //_kamicrashi.x = 0;
-            //_kamicrashi.y = 0;
-			_kamicrashi.alignPivot();
-//			_shape = new Shape();
-//			addChild(_shape);
-//			_shape.x = 0;
-//			_shape.y = 0;
-//			_shape.alignPivot();
-//			draw();
-		}
-		
-		/**
-		 * Default graphics for vehicle. Can be overridden in subclasses.
-		 */
-		/*protected function draw():void
-		{
-			_shape.graphics.clear();
-			_shape.graphics.lineStyle(2, 0xFFFFFF, 1);
-			_shape.graphics.moveTo(10, 0);
-			_shape.graphics.lineTo(-10, 5);
-			_shape.graphics.lineTo(-10, -5);
-			_shape.graphics.lineTo(10, 0);
-		}*/
-		
+
+//            _movieClip = movieClip;
+//            _sprite = sprite;
+//            if(_movieClip)
+//            {
+//                Starling.juggler.add(_movieClip);
+//                addChild(_movieClip);
+//                movieClip.alignPivot();
+//            }
+//            else if(_sprite)
+//            {
+//                addChild(_sprite);
+//                _sprite.alignPivot();
+//            }
+        }
+        public override function dispose():void
+        {
+//            if(_movieClip)
+//                Starling.juggler.remove(_movieClip);
+            super.dispose();
+        }
 		/**
 		 * Handles all basic motion. Should be called on each frame / timer interval.
 		 */
@@ -89,8 +86,8 @@ import starling.utils.rad2deg;
 			x = position.x;
 			y = position.y;
 
-            trace("kamicrashi x:" + _kamicrashi.x);
-            trace("kamicrashi y:" + _kamicrashi.y);
+            //trace("kamicrashi x:" + _kamicrashi.x);
+            //trace("kamicrashi y:" + _kamicrashi.y);
 			
 			// rotate heading to match velocity
 			//rotation = _velocity.angle * 180 / Math.PI;
@@ -143,6 +140,14 @@ import starling.utils.rad2deg;
 				if(position.y < 0) position.y = _gameScope.stage.stageHeight;
 			}
 		}
+        public function set gameScope(value:Scene):void
+        {
+            _gameScope = value;
+        }
+        public function get gameScope():Scene
+        {
+            return _gameScope;
+        }
 		
 		/**
 		 * Sets / gets what will happen if character hits edge.

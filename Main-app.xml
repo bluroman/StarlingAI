@@ -12,7 +12,7 @@
         <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
 
         <!-- The aspect ratio ("portrait", "landscape", or "any"). Optional. -->
-        <aspectRatio>any</aspectRatio>
+        <aspectRatio>landscape</aspectRatio>
 
         <!-- Whether the app will begin auto-orienting on launch. Optional. Default false -->
         <autoOrients>true</autoOrients>

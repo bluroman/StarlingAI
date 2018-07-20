@@ -14,6 +14,9 @@
             <entry library-id="dabac2ab-f570-47bd-ba51-6aef878e3687">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="8de2ac14-6303-46d2-92b2-71ad53c32950">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler_30_0_0_107" />
         </dependencies>
@@ -48,6 +51,16 @@
         <properties id="dabac2ab-f570-47bd-ba51-6aef878e3687" />
         <CLASSES>
           <root url="jar://D:/Work/Flash_Related/AS3_Library/SoundAS/swc/SoundAS.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8de2ac14-6303-46d2-92b2-71ad53c32950" />
+        <CLASSES>
+          <root url="file://D:/Data/D/Users/bluroman/Documents/GitHub/Starling-Filters/src" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
