@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:a2baf78b58f663ae6f4658c80f5f6a37:e230248a76d54297d57949995ce4e1fb:5644f64448cee392c412647b68ca167b$ -->
+<TextureAtlas imagePath="atlas-1.atf" width="1024" height="2048">
+    <SubTexture name="btn_pause1" x="854" y="1192" width="24" height="25"/>
+    <SubTexture name="btn_restart" x="716" y="513" rotated="true" width="9" height="8" frameX="-8" frameY="-9" frameWidth="25" frameHeight="25"/>
+    <SubTexture name="btn_restart1" x="812" y="1229" width="25" height="25"/>
+    <SubTexture name="bubble_white1" x="973" y="649" width="50" height="51"/>
+    <SubTexture name="BubbleResults/BubbleResults0001" x="948" y="1118" width="62" height="62" frameX="-32" frameY="-30" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0002" x="880" y="1106" width="66" height="64" frameX="-30" frameY="-29" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0003" x="796" y="1080" rotated="true" width="82" height="80" frameX="-23" frameY="-20" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0004" x="1" y="1253" width="96" height="96" frameX="-15" frameY="-13" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0005" x="150" y="1244" rotated="true" width="108" height="107" frameX="-10" frameY="-7" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0006" x="850" y="963" rotated="true" width="116" height="115" frameX="-6" frameY="-3" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0007" x="292" y="646" rotated="true" width="122" height="120" frameX="-3" frameY="0" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0008" x="164" y="669" width="122" height="118" frameX="-2" frameY="-2" frameWidth="126" frameHeight="122"/>
+    <SubTexture name="BubbleResults/BubbleResults0009" x="599" y="389" width="126" height="122"/>
+    <SubTexture name="bullet" x="983" y="261" width="4" height="9"/>
+    <SubTexture name="bullet_mc" x="590" y="406" width="6" height="6"/>
+    <SubTexture name="bullet_new" x="590" y="391" width="6" height="13"/>
+    <SubTexture name="button" x="131" y="144" width="38" height="38"/>
+    <SubTexture name="Explosion/50000" x="747" y="1300" width="23" height="22" frameX="-5" frameY="-5" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50001" x="775" y="1281" width="24" height="23" frameX="-4" frameY="-5" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50002" x="812" y="1256" width="25" height="24" frameX="-4" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50003" x="996" y="1211" width="27" height="25" frameX="-3" frameY="-4" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50004" x="996" y="1182" width="27" height="27" frameX="-3" frameY="-3" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50005" x="663" y="1245" width="29" height="28" frameX="-2" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50006" x="114" y="1324" width="30" height="29" frameX="-1" frameY="-2" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50007" x="120" y="1064" width="31" height="30" frameX="-1" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50008" x="120" y="1031" width="31" height="31" frameX="-1" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="Explosion/50009" x="410" y="860" width="32" height="32"/>
+    <SubTexture name="Explosion/50010" x="122" y="936" width="32" height="32"/>
+    <SubTexture name="Explosion/50011" x="120" y="1096" rotated="true" width="31" height="29" frameX="-2" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="gameover" x="336" y="1" width="134" height="24" frameX="0" frameY="-1" frameWidth="145" frameHeight="25"/>
+    <SubTexture name="highscore" x="831" y="740" rotated="true" width="18" height="74"/>
+    <SubTexture name="home_bgbubble" x="114" y="1292" width="30" height="30"/>
+    <SubTexture name="kamicrashi_1" x="831" y="816" width="18" height="56"/>
+    <SubTexture name="kamicrashi_2" x="781" y="1207" rotated="true" width="56" height="20"/>
+    <SubTexture name="kamicrashi_3" x="880" y="1203" rotated="true" width="56" height="29"/>
+    <SubTexture name="kamicrashi_4" x="431" y="85" width="37" height="56"/>
+    <SubTexture name="kamicrashi_5" x="805" y="1022" width="43" height="56"/>
+    <SubTexture name="kamicrashi_6" x="979" y="457" width="44" height="56"/>
+    <SubTexture name="kamicrashi_7" x="796" y="1162" rotated="true" width="56" height="43"/>
+    <SubTexture name="kamicrashi_8" x="131" y="86" width="38" height="56"/>
+    <SubTexture name="kamicrashi_9" x="938" y="1213" rotated="true" width="56" height="29"/>
+    <SubTexture name="kamicrashi_10" x="665" y="1192" rotated="true" width="56" height="20"/>
+    <SubTexture name="kamicrashi_11" x="929" y="1244" rotated="true" width="56" height="19"/>
+    <SubTexture name="kamicrashi_12" x="723" y="1192" rotated="true" width="56" height="20"/>
+    <SubTexture name="kamicrashi_13" x="880" y="1172" rotated="true" width="56" height="29"/>
+    <SubTexture name="kamicrashi_14" x="431" y="27" width="37" height="56"/>
+    <SubTexture name="kamicrashi_15" x="968" y="1060" width="43" height="56"/>
+    <SubTexture name="kamicrashi_16" x="979" y="399" width="44" height="56"/>
+    <SubTexture name="kamicrashi_17" x="805" y="964" width="43" height="56"/>
+    <SubTexture name="kamicrashi_18" x="131" y="28" width="38" height="56"/>
+    <SubTexture name="kamicrashi_19" x="938" y="1182" rotated="true" width="56" height="29"/>
+    <SubTexture name="kamicrashi_20" x="871" y="1234" rotated="true" width="56" height="20"/>
+    <SubTexture name="leaderboard" x="171" y="1" width="163" height="24"/>
+    <SubTexture name="menu" x="880" y="1080" width="68" height="24"/>
+    <SubTexture name="panelOverlay" x="153" y="1128" width="114" height="114"/>
+    <SubTexture name="paused" x="990" y="138" rotated="true" width="33" height="82" frameX="0" frameY="-1" frameWidth="95" frameHeight="34"/>
+    <SubTexture name="play_normal2" x="973" y="702" width="50" height="50"/>
+    <SubTexture name="play_over" x="131" y="211" rotated="true" width="35" height="51" frameX="0" frameY="0" frameWidth="62" frameHeight="35"/>
+    <SubTexture name="restart" x="1" y="1351" width="91" height="24"/>
+    <SubTexture name="ShiningStar/ShiningStar0001" x="431" y="143" rotated="true" width="37" height="27" frameX="-4" frameY="-1" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0002" x="431" y="172" rotated="true" width="37" height="27" frameX="-4" frameY="-1" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0003" x="431" y="253" rotated="true" width="36" height="25" frameX="-5" frameY="-2" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0004" x="131" y="184" rotated="true" width="36" height="25" frameX="-5" frameY="-2" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0005" x="431" y="201" rotated="true" width="37" height="24" frameX="-6" frameY="0" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0006" x="431" y="227" rotated="true" width="37" height="24" frameX="-6" frameY="0" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0007" x="431" y="280" rotated="true" width="35" height="26" frameX="-6" frameY="-2" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0008" x="131" y="264" rotated="true" width="35" height="28" frameX="-6" frameY="-2" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0009" x="120" y="1127" rotated="true" width="31" height="28" frameX="-6" frameY="0" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0010" x="122" y="1001" rotated="true" width="32" height="28" frameX="-6" frameY="0" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0011" x="129" y="605" rotated="true" width="34" height="28" frameX="-6" frameY="-1" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0012" x="426" y="484" rotated="true" width="34" height="32" frameX="-3" frameY="-1" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0013" x="122" y="970" width="32" height="29" frameX="-3" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0014" x="854" y="1162" width="24" height="28" frameX="-6" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0015" x="721" y="1299" width="24" height="24" frameX="-6" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0016" x="694" y="1274" width="25" height="24" frameX="-5" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0017" x="839" y="1249" width="26" height="22" frameX="-4" frameY="-9" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0018" x="781" y="1257" width="26" height="22" frameX="-4" frameY="-9" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0019" x="753" y="1214" width="26" height="29" frameX="-5" frameY="-9" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0020" x="781" y="1229" rotated="true" width="29" height="26" frameX="-5" frameY="-9" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0021" x="753" y="1245" width="26" height="28" frameX="-5" frameY="-9" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0022" x="996" y="1238" width="26" height="30" frameX="-5" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0023" x="396" y="1029" rotated="true" width="31" height="27" frameX="-5" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0024" x="396" y="1058" rotated="true" width="31" height="27" frameX="-5" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0025" x="839" y="1219" rotated="true" width="30" height="28" frameX="-4" frameY="-7" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0026" x="129" y="635" rotated="true" width="34" height="28" frameX="-4" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0027" x="131" y="294" rotated="true" width="35" height="26" frameX="-5" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0028" x="131" y="322" rotated="true" width="35" height="26" frameX="-5" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0029" x="426" y="518" rotated="true" width="34" height="29" frameX="-5" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="ShiningStar/ShiningStar0030" x="129" y="574" rotated="true" width="34" height="29" frameX="-5" frameY="-3" frameWidth="35" frameHeight="40"/>
+    <SubTexture name="soundoff" x="721" y="1274" width="25" height="23"/>
+    <SubTexture name="soundon" x="748" y="1275" width="25" height="23"/>
+    <SubTexture name="spaceship/spaceship0001" x="131" y="486" rotated="true" width="34" height="42" frameX="-15" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0002" x="131" y="396" rotated="true" width="34" height="43" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0003" x="428" y="308" rotated="true" width="34" height="43" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0004" x="428" y="353" rotated="true" width="34" height="43" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0005" x="131" y="441" rotated="true" width="34" height="43" frameX="-14" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0006" x="131" y="350" rotated="true" width="34" height="44" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0007" x="990" y="222" rotated="true" width="33" height="44" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0008" x="421" y="549" rotated="true" width="33" height="43" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0009" x="421" y="594" rotated="true" width="33" height="43" frameX="-13" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0010" x="129" y="665" rotated="true" width="33" height="44" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0011" x="974" y="515" width="44" height="32" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0012" x="125" y="801" rotated="true" width="32" height="43" frameX="-12" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0013" x="974" y="549" width="44" height="32" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0014" x="974" y="583" width="44" height="32" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0015" x="992" y="93" rotated="true" width="31" height="43" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0016" x="817" y="874" rotated="true" width="31" height="43" frameX="-11" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0017" x="992" y="1" rotated="true" width="31" height="44" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0018" x="992" y="47" rotated="true" width="31" height="44" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0019" x="396" y="1087" rotated="true" width="30" height="43" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0020" x="118" y="1157" rotated="true" width="30" height="43" frameX="-10" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0021" x="974" y="617" width="44" height="30" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0022" x="972" y="754" width="44" height="30" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0023" x="542" y="1207" width="43" height="29" frameX="-9" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0024" x="972" y="786" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0025" x="972" y="817" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0026" x="972" y="848" width="44" height="29" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0027" x="708" y="1214" width="43" height="28" frameX="-8" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0028" x="971" y="910" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0029" x="971" y="940" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0030" x="968" y="970" width="44" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0031" x="708" y="1244" width="43" height="28" frameX="-7" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0032" x="968" y="1000" width="44" height="28" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0033" x="968" y="1030" width="44" height="28" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0034" x="587" y="1207" width="43" height="29" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0035" x="632" y="1207" rotated="true" width="29" height="43" frameX="-6" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0036" x="971" y="879" width="44" height="29" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0037" x="663" y="1214" width="43" height="29" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0038" x="118" y="1202" rotated="true" width="30" height="43" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0039" x="389" y="1132" rotated="true" width="30" height="43" frameX="-5" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0040" x="389" y="1177" rotated="true" width="30" height="43" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0041" x="118" y="1247" rotated="true" width="30" height="43" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0042" x="817" y="919" rotated="true" width="31" height="43" frameX="-4" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0043" x="401" y="894" rotated="true" width="31" height="43" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0044" x="401" y="939" rotated="true" width="31" height="43" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0045" x="401" y="984" rotated="true" width="31" height="43" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0046" x="410" y="772" rotated="true" width="32" height="42" frameX="-3" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0047" x="125" y="846" rotated="true" width="32" height="43" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0048" x="125" y="891" rotated="true" width="32" height="43" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0049" x="410" y="816" rotated="true" width="32" height="42" frameX="-2" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0050" x="421" y="639" rotated="true" width="33" height="43" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0051" x="125" y="711" rotated="true" width="33" height="43" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0052" x="416" y="684" rotated="true" width="33" height="42" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0053" x="416" y="728" rotated="true" width="33" height="42" frameX="-1" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0054" x="125" y="756" rotated="true" width="33" height="43" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0055" x="131" y="530" rotated="true" width="34" height="42" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0056" x="989" y="268" rotated="true" width="34" height="42" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0057" x="983" y="312" rotated="true" width="34" height="42" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0058" x="983" y="356" rotated="true" width="34" height="41" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0059" x="426" y="398" rotated="true" width="34" height="41" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="spaceship/spaceship0060" x="426" y="441" rotated="true" width="34" height="41" frameX="0" frameY="0" frameWidth="57" frameHeight="34"/>
+    <SubTexture name="ThirtyEight/380000" x="851" y="515" rotated="true" width="121" height="110" frameX="-7" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380001" x="434" y="988" width="114" height="114" frameX="-5" frameY="-10" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380002" x="570" y="860" rotated="true" width="116" height="115" frameX="-5" frameY="-9" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380003" x="851" y="741" rotated="true" width="119" height="108" frameX="-13" frameY="-7" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380004" x="727" y="515" rotated="true" width="122" height="112" frameX="-11" frameY="-5" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380005" x="156" y="1012" rotated="true" width="115" height="114" frameX="-10" frameY="-4" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380006" x="451" y="754" rotated="true" width="117" height="116" frameX="-8" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380007" x="716" y="629" rotated="true" width="120" height="109" frameX="-7" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380008" x="851" y="627" rotated="true" width="120" height="112" frameX="-5" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380009" x="1" y="1137" rotated="true" width="115" height="114" frameX="-5" frameY="-10" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380010" x="1" y="1029" rotated="true" width="117" height="106" frameX="-14" frameY="-9" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380011" x="588" y="639" rotated="true" width="120" height="109" frameX="-13" frameY="-7" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380012" x="428" y="1104" width="112" height="112" frameX="-11" frameY="-5" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380013" x="688" y="960" rotated="true" width="115" height="114" frameX="-10" frameY="-4" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380014" x="159" y="900" rotated="true" width="117" height="110" frameX="-8" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380015" x="456" y="643" rotated="true" width="120" height="109" frameX="-7" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380016" x="269" y="1218" width="112" height="110" frameX="-6" frameY="-13" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380017" x="273" y="1102" width="114" height="114" frameX="-5" frameY="-11" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380018" x="278" y="995" rotated="true" width="116" height="105" frameX="-15" frameY="-10" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380019" x="578" y="750" rotated="true" width="118" height="108" frameX="-14" frameY="-9" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380020" x="710" y="740" rotated="true" width="119" height="110" frameX="-13" frameY="-7" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380021" x="1" y="800" rotated="true" width="122" height="113" frameX="-11" frameY="-5" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380022" x="562" y="977" rotated="true" width="115" height="114" frameX="-10" frameY="-4" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380023" x="282" y="879" rotated="true" width="117" height="114" frameX="-8" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380024" x="288" y="768" rotated="true" width="120" height="109" frameX="-7" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380025" x="1" y="915" rotated="true" width="119" height="112" frameX="-5" frameY="-4" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380026" x="679" y="1076" rotated="true" width="115" height="114" frameX="-5" frameY="-10" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380027" x="698" y="852" rotated="true" width="117" height="106" frameX="-14" frameY="-9" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380028" x="160" y="789" rotated="true" width="120" height="109" frameX="-13" frameY="-7" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380029" x="550" y="1093" rotated="true" width="113" height="112" frameX="-11" frameY="-5" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380030" x="444" y="872" rotated="true" width="116" height="114" frameX="-10" frameY="-4" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ThirtyEight/380031" x="851" y="851" rotated="true" width="118" height="110" frameX="-8" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="tomorrowpeople48_0" x="298" y="287" width="128" height="103" frameX="0" frameY="0" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260000" x="298" y="392" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260001" x="472" y="1" width="128" height="128"/>
+    <SubTexture name="TwentySix/260002" x="171" y="27" width="128" height="128"/>
+    <SubTexture name="TwentySix/260003" x="1" y="28" width="128" height="128"/>
+    <SubTexture name="TwentySix/260004" x="464" y="391" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260005" x="167" y="417" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260006" x="1" y="158" width="128" height="128"/>
+    <SubTexture name="TwentySix/260007" x="301" y="27" width="128" height="128"/>
+    <SubTexture name="TwentySix/260008" x="602" y="1" width="128" height="128"/>
+    <SubTexture name="TwentySix/260009" x="727" y="389" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260010" x="1" y="548" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260011" x="732" y="1" width="128" height="128"/>
+    <SubTexture name="TwentySix/260012" x="862" y="1" width="128" height="128"/>
+    <SubTexture name="TwentySix/260013" x="470" y="131" width="128" height="128"/>
+    <SubTexture name="TwentySix/260014" x="1" y="676" width="122" height="122" frameX="-3" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260015" x="167" y="545" rotated="true" width="123" height="122" frameX="-3" frameY="-3" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260016" x="853" y="389" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260017" x="599" y="261" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260018" x="171" y="157" width="128" height="128"/>
+    <SubTexture name="TwentySix/260019" x="301" y="157" width="128" height="128"/>
+    <SubTexture name="TwentySix/260020" x="1" y="288" width="128" height="128"/>
+    <SubTexture name="TwentySix/260021" x="590" y="513" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260022" x="727" y="261" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260023" x="600" y="131" width="128" height="128"/>
+    <SubTexture name="TwentySix/260024" x="730" y="131" width="128" height="128"/>
+    <SubTexture name="TwentySix/260025" x="860" y="131" width="128" height="128"/>
+    <SubTexture name="TwentySix/260026" x="462" y="517" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260027" x="855" y="261" width="126" height="126" frameX="-1" frameY="-1" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="TwentySix/260028" x="469" y="261" width="128" height="128"/>
+    <SubTexture name="TwentySix/260029" x="168" y="287" width="128" height="128"/>
+    <SubTexture name="TwentySix/260030" x="1" y="418" width="128" height="128"/>
+    <SubTexture name="TwentySix/260031" x="295" y="520" width="124" height="124" frameX="-2" frameY="-2" frameWidth="128" frameHeight="128"/>
+    <SubTexture name="ufo" x="1" y="1" width="168" height="25" frameX="0" frameY="-40" frameWidth="168" frameHeight="104"/>
+    <SubTexture name="yourscore" x="99" y="1253" rotated="true" width="13" height="76"/>
+</TextureAtlas>
