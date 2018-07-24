@@ -1,5 +1,7 @@
 package
 {
+import com.tuarua.AdMobANE;
+
 import screens.ScreenHome;
 import screens.ScreenLose;
 import screens.ScreenWin;

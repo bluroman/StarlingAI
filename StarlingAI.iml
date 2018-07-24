@@ -17,17 +17,45 @@
             <entry library-id="8de2ac14-6303-46d2-92b2-71ad53c32950">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="c21849c6-961e-4f24-92b2-742ef76864dd">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="7c97811f-25a4-4bba-849a-4eb448a71603">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="cfdcf451-2191-4bea-b272-e3f3eb353d04">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="5feec7db-02ad-440e-a8dc-7fcacf003235">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="2554b896-c390-4120-b91a-9f59bb118635">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="a0a41fba-3309-436e-8470-daacf37df7bc">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="3ae46ad6-44ba-4565-b3c3-1f7a50be0950">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler_30_0_0_107" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main" />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
+          </files-to-package>
+          <AirSigningOptions key-alias="bluroman" keystore-path="D:/Work/Android_Related/KeyStore/hoonnam.jks" keystore-type="JKS" use-temp-certificate="false" />
+        </packaging-android>
         <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets/icons/Assets.car" path-in-package="Assets.car" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Frameworks" path-in-package="Frameworks" />
           </files-to-package>
           <AirSigningOptions keystore-path="G:/CertificateNProvisionIOS/ios_dev_hoonnam.p12" provisioning-profile-path="G:/CertificateNProvisionIOS/TestingAppD.mobileprovision" />
         </packaging-ios>
@@ -61,6 +89,76 @@
         <properties id="8de2ac14-6303-46d2-92b2-71ad53c32950" />
         <CLASSES>
           <root url="file://D:/Data/D/Users/bluroman/Documents/GitHub/Starling-Filters/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c21849c6-961e-4f24-92b2-742ef76864dd" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.google.code.gson.gson-2.8.1.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="7c97811f-25a4-4bba-849a-4eb448a71603" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.tuarua.frekotlin.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="cfdcf451-2191-4bea-b272-e3f3eb353d04" />
+        <CLASSES>
+          <root url="jar://G:/AS3Games/AdMobANE.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="5feec7db-02ad-440e-a8dc-7fcacf003235" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.google.android.gms.play-services-ads-lite-15.0.1.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="2554b896-c390-4120-b91a-9f59bb118635" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.android.support.support-v4-27.1.0.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="a0a41fba-3309-436e-8470-daacf37df7bc" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.google.android.gms.play-services-base-15.0.1.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="3ae46ad6-44ba-4565-b3c3-1f7a50be0950" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/com.marpies.ane.gameServices.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

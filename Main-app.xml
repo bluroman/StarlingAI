@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/30.0">
 
-    <id>com.bluroman.starlingai</id> <!-- Bundle Identifier. Required. -->
+    <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
     <filename>StarlingAI</filename> <!-- Used as the filename for the application. Required. -->
     <name>StarlingAI</name> <!-- The name that is displayed below the app icon. -->
-    <versionNumber>0.0.1</versionNumber> <!-- Required. -->
+    <versionNumber>2.0.0</versionNumber> <!-- Required. -->
 
     <!-- Settings for the application's initial window. Required. -->
     <initialWindow>
@@ -15,7 +15,7 @@
         <aspectRatio>landscape</aspectRatio>
 
         <!-- Whether the app will begin auto-orienting on launch. Optional. Default false -->
-        <autoOrients>true</autoOrients>
+        <!--<autoOrients></autoOrients>-->
 
         <!-- Whether the app launches in full screen. Optional. Mobile only. Default false -->
         <!-- (On iOS, this decides if the StatusBar is visible or not.) -->
@@ -55,6 +55,17 @@
                 <string>1</string>
                 <string>2</string>
             </array>
+            <key>MinimumOSVersion</key>
+            <string>9.0</string>
+            <key>NSAppTransportSecurity</key>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsForMedia</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsInWebContent</key>
+                <true/>
+             </dict>
         ]]></InfoAdditions>
 
         <!-- Display Resolution for the app ("standard" or "high"). Optional. Default "standard" -->
@@ -68,6 +79,8 @@
             <![CDATA[
              <manifest android:installLocation="auto">
                  <uses-permission android:name="android.permission.INTERNET"/>
+                 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
                  <uses-configuration android:reqFiveWayNav="true"/>
                  <supports-screens android:normalScreens="true"/>
                  <uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>
@@ -78,10 +91,26 @@
                              <category android:name="android.intent.category.LAUNCHER"/>
                          </intent-filter>
                      </activity>
+                  <meta-data android:name="com.google.android.gms.games.APP_ID"
+            android:value="\ 386812349087" />
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+                  <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+                  <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:theme="@android:style/Theme.Translucent" />
                  </application>
              </manifest>
          ]]>
         </manifestAdditions>
     </android>
+    <extensions>
+    <extensionID>com.tuarua.frekotlin</extensionID>
+    <extensionID>com.google.android.gms.play-services-base</extensionID>
+    <extensionID>com.google.android.gms.play-services-ads-lite</extensionID>
+    <extensionID>com.android.support.support-v4</extensionID>
+    <extensionID>com.google.code.gson.gson</extensionID>
+        <extensionID>com.tuarua.AdMobANE</extensionID>
+        <extensionID>com.marpies.ane.gameServices</extensionID>
+    </extensions>
 
 </application>
