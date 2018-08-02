@@ -57,23 +57,30 @@ public class CollisionManager
             if(Point.distance(p2, p3) < play._spaceShip._trailParticle.startSize / 3 + a.bounds.height/2)
             {
                 trace("alien only explosions");
-                play.explosionManager.spawn(p2.x, p2.y, aColor);
+                //play.explosionManager.spawn(p2.x, p2.y, aColor);
 
                 play.scoreKeeper.scoreIncrease = a._alienPointFactor;
                 play.scoreKeeper.enemyKilled = 1;
                 play.alienGenerator.destroyAlien(a);
-
+                if(a._alienHealthFactor > 5)
+                    play.explosionManager.spawn(p2.x, p2.y, aColor);
+                else
+                    play.explosionManager.spawnPop(p2.x, p2.y, aColor);
 
                 if( play.isGameActive )play.hud.updateScore();
                 SoundAS.playFx("playerhit");
             }
-            else if(Point.distance(p1, p2) < shipHeight/2+ a.bounds.height/2)
+            else if(!play._spaceShip.isDead && Point.distance(p1, p2) < shipHeight/2+ a.bounds.height/2)
             {
                 play._spaceShip.isDead = true;
                 play._spaceShip.explosion();
-                play.explosionManager.spawn(p2.x, p2.y, aColor);
+                //play.explosionManager.spawn(p2.x, p2.y, aColor);
 
                 play.alienGenerator.destroyAlien(a);
+                if(a._alienHealthFactor > 5)
+                    play.explosionManager.spawn(p2.x, p2.y, aColor);
+                else
+                    play.explosionManager.spawnPop(p2.x, p2.y, aColor);
             }
         }
     }
@@ -102,12 +109,14 @@ public class CollisionManager
                 aColor = a._animLoop.color;
                 if(Point.distance(p1, p2) < a.bounds.height/2 + bulletHeight/2)
                 {
-                    play.explosionManager.spawn(p2.x, p2.y, aColor);
-
                     play.scoreKeeper.scoreIncrease = a._alienPointFactor;
                     play.scoreKeeper.enemyKilled = 1;
                     play.alienGenerator.destroyAlien(a);
                     play.bulletGenerator.destroyBullet(b);
+                    if(a._alienHealthFactor > 5)
+                        play.explosionManager.spawn(p2.x, p2.y, aColor);
+                    else
+                        play.explosionManager.spawnPop(p2.x, p2.y, aColor);
 
                     if( play.isGameActive )play.hud.updateScore();
                     SoundAS.playFx("playerhit");

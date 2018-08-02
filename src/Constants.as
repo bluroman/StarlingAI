@@ -22,5 +22,10 @@ public class Constants
         public static const ADMOB_REWARD_ANDROID_ID:String = "ca-app-pub-6964194614288140/6135922307";
         public static const ADMOB_REWARD_IOS_ID:String = "ca-app-pub-6964194614288140/4551377894";
         public static const LEADERBOARD_ID:String = "bluroman.BubblySpace.Scores";
+        public static const ACH_FIRST_STEP_IOS:String = "FirstStep";
+        public static const ACH_10_DOWN_IOS:String = "10Down";
+        public static const ACH_20_DOWN_IOS:String = "20Down";
+        public static const ACH_50_DOWN_IOS:String = "50Down";
+        public static const ACH_100_DOWN_IOS:String = "100Down";
     }
 }

@@ -12,9 +12,14 @@ import com.marpies.ane.gameservices.events.GSLeaderboardEvent;
 
 import extensions.ShineFilter;
 
+import game.BubblePop;
+
 import starling.extensions.PDParticleSystem;
 
 import starling.extensions.ParticleSystem;
+
+import utils.MenuButton;
+import utils.ScoreKeeper;
 
 import utils.Vector2D;
 import utils.Vehicle;
@@ -58,12 +63,13 @@ public class ScreenHome extends Scene
 {
     // set by incoming params
     //private var _controller:ScreenManager;
+    public var scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
     private var _tf_logo:TextField;
     private var _btnPlay:Image;
     public var _btnLeaderboard:Image;
     private var _arrayBtns:Array = [];
     private var _btnClicked:Image;// track which btn clicked, for pop animation
-    private var _animPop:MovieClip;
+    private var _animPop:BubblePop;
 
     private var _bubbleArray:Array = [];
     private var _bubblePositionArray:Array = [];
@@ -84,67 +90,9 @@ public class ScreenHome extends Scene
 
     [Embed(source="../../system/space.png")]
     private static const SpaceParticle:Class;
-
     public function ScreenHome()
     {
-        if(os.isIos)
-        {
-            var showLogs:Boolean = true;
-            GameServices.init(showLogs);
-            GameServices.addEventListener(GSAuthEvent.SUCCESS, onGameServicesSilentAuthSuccess);
-            GameServices.addEventListener(GSAuthEvent.ERROR, onGameServicesSilentAuthError);
-            GameServices.addEventListener(GSIdentityEvent.SUCCESS, onGameServicesIdentitySuccess);
-            GameServices.addEventListener(GSIdentityEvent.ERROR, onGameServicesIdentityError);
-            GameServices.addEventListener( GSAuthEvent.SUCCESS, onGameServicesAuthSuccess );
-            GameServices.addEventListener( GSAuthEvent.ERROR, onGameServicesAuthError );
-            GameServices.addEventListener( GSAuthEvent.DIALOG_WILL_APPEAR, onGameServicesAuthDialogWillAppear );
 
-            GameServices.leaderboards.addEventListener(GSLeaderboardEvent.UI_SHOW, onLeaderboardsUIShow);
-            GameServices.leaderboards.addEventListener(GSLeaderboardEvent.UI_HIDE, onLeaderboardsUIHide);
-            GameServices.leaderboards.addEventListener(GSLeaderboardEvent.UI_ERROR, onLeaderboardsUIError);
-            trace("Constructor for Screen Home");
-        }
-    }
-    private function onGameServicesSilentAuthSuccess( event:GSAuthEvent ):void {
-        trace( "User authenticated silently:", event.player );
-    }
-
-    private function onGameServicesSilentAuthError( event:GSAuthEvent ):void {
-        trace( "Auth error occurred:", event.errorMessage );
-    }
-    private function onGameServicesIdentitySuccess( event:GSIdentityEvent ):void {
-        // pass the information to a third party server
-        trace( "publicKeyUrl " + event.publicKeyUrl );
-        trace( "signature " + event.signature );
-        trace( "salt " + event.salt );
-        trace( "timestamp " + event.timestamp );
-    }
-
-    private function onGameServicesIdentityError( event:GSIdentityEvent ):void {
-        trace( "Identity error: " + event.errorMessage );
-    }
-    private function onGameServicesAuthDialogWillAppear( event:GSAuthEvent ):void {
-        trace( "Native UI will appear, pause game rendering" );
-    }
-
-    private function onGameServicesAuthSuccess( event:GSAuthEvent ):void {
-        trace( "User authenticated:", event.player );
-        GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID);
-    }
-
-    private function onGameServicesAuthError( event:GSAuthEvent ):void {
-        trace( "Auth error occurred:", event.errorMessage );
-    }
-    private function onLeaderboardsUIShow( event:GSLeaderboardEvent ):void {
-        trace( "Leaderboards UI shown" );
-    }
-
-    private function onLeaderboardsUIHide( event:GSLeaderboardEvent ):void {
-        trace( "Leaderboards UI hidden" );
-    }
-
-    private function onLeaderboardsUIError( event:GSLeaderboardEvent ):void {
-        trace( "Leaderboards UI error: " + event.errorMessage );
     }
 
 
@@ -272,9 +220,9 @@ public class ScreenHome extends Scene
         _btnLeaderboard.scaleX = _btnLeaderboard.scaleY = .3;// scale down, anim in later
 //        if(!_controller.isAuthenticated)
 //            _btnLeaderboard.color = Color.GRAY;
-
         // btn pop anim
-        _animPop = new MovieClip( Root.assets.getTextures("BubbleResults/BubbleResults"), 60 );
+        //_animPop = new MovieClip( Root.assets.getTextures("BubbleResults/BubbleResults"), 60 );
+        _animPop = new BubblePop();
         _animPop.loop = false;
 
         // legal disclaimer
@@ -292,6 +240,11 @@ public class ScreenHome extends Scene
         //_array_objects.push( _controller, _tf_logo, _btnPlay, _btnLeaderboard, _animPop, _tf_legal );
 
         setup_bubbles();
+    }
+    private function onButtonTriggered(event:starling.events.Event):void
+    {
+        trace("Reset Button Triggered");
+        scoreKeeper.resetLocalData();
     }
 
 
@@ -400,19 +353,7 @@ public class ScreenHome extends Scene
                     break;
                 case _btnLeaderboard:
                     SoundAS.playFx("click");
-                    trace( GameServices.isAuthenticated );
-                        if(os.isIos)
-                        {
-
-                            if(!GameServices.isAuthenticated)
-                                    GameServices.authenticate();
-                            else
-                                GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID);
-                        }
-//                        if(!_controller.isAuthenticated)
-//                            _controller.LoginGooglePlayOrGameCenter();
-//                        else
-//                            _controller.showLeaderboard();
+                    Root.gamecenterManager.showLeaderboard();
                     break;
             }
 

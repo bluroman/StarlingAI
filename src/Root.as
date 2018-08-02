@@ -2,6 +2,10 @@ package
 {
 import com.tuarua.AdMobANE;
 
+import flash.net.registerClassAlias;
+
+import mx.utils.NameUtil;
+
 import screens.ScreenHome;
 import screens.ScreenLose;
 import screens.ScreenWin;
@@ -21,7 +25,15 @@ import starling.textures.Texture;
 
 import treefortress.sound.SoundAS;
 
+import ui.FeathersDialog;
+
+import utils.AdMobManager;
+
+import utils.GameCenterManager;
+
 import utils.MenuButton;
+import utils.ScoreKeeper;
+import utils.os;
 
 /** The Root class is the topmost display object in your game.
      *  It is responsible for switching between game and menu. For this, it listens to
@@ -31,9 +43,11 @@ import utils.MenuButton;
     public class Root extends Sprite
     {
         private static var sAssets:AssetManager;
-
         private var _activeScene:Scene;
         private static var sMute:Boolean;
+        private static var sCount:Number = 0;
+        private static var sgamecenterManager:GameCenterManager;
+        private static var sadmobManager:AdMobManager;
         [Embed(source="../system/tomorrowpeople48.fnt", mimeType="application/octet-stream")]
         public static const FontXml:Class;
 
@@ -70,6 +84,8 @@ import utils.MenuButton;
                     XML(new FontXml()));
 
             TextField.registerCompositor(font,Constants.DEFAULT_FONT_2);
+            sadmobManager = new AdMobManager();
+            sgamecenterManager = new GameCenterManager();
         }
         
         public function start(assets:AssetManager):void
@@ -78,11 +94,13 @@ import utils.MenuButton;
             // all the assets from everywhere by simply calling "Root.assets"
 
             sAssets = assets;
-            showScene(Menu);
+            showScene(ScreenHome);
 
             // If you don't want to support auto-orientation, you can delete this event handler.
             // Don't forget to update the AIR XML accordingly ("aspectRatio" and "autoOrients").
             stage.addEventListener(Event.RESIZE, onResize);
+            /*if(os.isIos || os.isAndroid)
+                sadmobManager.onLoadBanner();*/
         }
 
         private function showScene(scene:Class):void
@@ -151,7 +169,7 @@ import utils.MenuButton;
         private function onWinScreen(event:Event):void
         {
             trace("Win Screen");
-            showScene(ScreenWin);
+            showScene(FeathersDialog);
         }
         private function onLoseScreen(event:Event):void
         {
@@ -160,7 +178,11 @@ import utils.MenuButton;
         }
         
         public static function get assets():AssetManager { return sAssets; }
+        public static function get gamecenterManager():GameCenterManager { return sgamecenterManager;}
+        public static function get admobManager():AdMobManager { return sadmobManager;}
         public static function set mute(yesNo:Boolean):void{sMute = yesNo;}
         public static function get mute():Boolean{return sMute;}
+        public static function set playCount(count:Number):void{sCount += count;}
+        public static function get playCount():Number{return sCount;}
     }
 }

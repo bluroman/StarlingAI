@@ -21,6 +21,7 @@ public class BulletGenerator {
     private var _reloadTimer:Timer;
     private var _reloadSpeed:Number = 250; //milliseconds
 
+
     public function BulletGenerator(play:Play)
     {
         this.play = play;
@@ -40,7 +41,7 @@ public class BulletGenerator {
             if(b.y < 0)
                 destroyBullet(b);
         }
-        //if(!play.isFiring && count%5 == 0)
+        if(!play._isLevelLoading)
             fire();
 
         count++;

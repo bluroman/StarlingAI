@@ -1,5 +1,7 @@
 package game
 {
+import starling.filters.GlowFilter;
+
 import utils.RandomNumberRange;
 import utils.StarlingPool;
 
@@ -32,21 +34,16 @@ public class AlienGenerator extends Sprite
     public var isAlienReady:Boolean;
     private var _ufo:Image;
     private var pool:StarlingPool;
+    private var _bubblePop:BubblePop;
 	public function AlienGenerator()
 	{
         pool = new StarlingPool(Alien, 20);
-
+        //_bubblePop = new BubblePop();
+        //addChild(_bubblePop);
 	}
     function initFilters():void
     {
-        var flashlightFilter:FlashlightFilter = new FlashlightFilter(0.5, 1, 1);
-        flashlightFilter.red = 1.0;
-        flashlightFilter.green = 1.0;
-        flashlightFilter.blue = 1.0;
-
         var crtFilter:CRTFilter = new CRTFilter();
-
-        var spotlightFilter:SpotlightFilter = new SpotlightFilter(0.5, 0.5);
         _ufo.filter = crtFilter;
     }
 	public function init( data:Object ):void
@@ -79,6 +76,14 @@ public class AlienGenerator extends Sprite
                 a._alienHealthFactor -= 5;
                 if(a._alienHealthFactor > 0)
                 {
+//                    _bubblePop = new BubblePop();
+//                    _bubblePop.x = a.x;
+//                    _bubblePop.y = a.y;
+//                    _bubblePop.loop = false;
+//                    trace("bubble pop x:" + _bubblePop.x + " y:" + _bubblePop.y);
+//                    _bubblePop.alignPivot();
+//                    _gameScope.addChild(_bubblePop);
+//                    Starling.juggler.add(_bubblePop);
                     a.whiteBubble.visible = false;
                     a.edgeBehavior = Vehicle.WRAP;
                 }
@@ -188,7 +193,7 @@ public class AlienGenerator extends Sprite
         for (var i:int = 0; i < _gameLevel + 3; i++)
         {
             var _alien:Alien = pool.getSprite() as Alien;
-            _alien.scaleX = _alien.scaleY = _alien._alienScaleFactor = 1.0;
+            _alien.scaleX = _alien.scaleY = _alien._alienScaleFactor;
             _alien.alignPivot();
             _alien.gameScope = _gameScope;
             //_alien.velocity.length = 10;

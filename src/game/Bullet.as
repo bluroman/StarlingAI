@@ -14,7 +14,7 @@ public class Bullet extends Sprite
 		public var owner:Play;
         public function Bullet():void
         {
-            var img:Image = new Image(Root.assets.getTexture("bullet"));
+            var img:Image = new Image(Root.assets.getTexture("bullet01"));
             img.alignPivot();
             addChild(img);
         }

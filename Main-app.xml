@@ -2,20 +2,20 @@
 <application xmlns="http://ns.adobe.com/air/application/30.0">
 
     <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
-    <filename>StarlingAI</filename> <!-- Used as the filename for the application. Required. -->
-    <name>StarlingAI</name> <!-- The name that is displayed below the app icon. -->
-    <versionNumber>2.0.0</versionNumber> <!-- Required. -->
+    <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
+    <name>BubblySpace</name> <!-- The name that is displayed below the app icon. -->
+    <versionNumber>3.0.0</versionNumber> <!-- Required. -->
 
     <!-- Settings for the application's initial window. Required. -->
     <initialWindow>
         <!-- The main SWF or HTML file of the application. Required. -->
-        <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+        <content>Main.swf</content>
 
         <!-- The aspect ratio ("portrait", "landscape", or "any"). Optional. -->
         <aspectRatio>landscape</aspectRatio>
 
         <!-- Whether the app will begin auto-orienting on launch. Optional. Default false -->
-        <!--<autoOrients></autoOrients>-->
+        <autoOrients>true</autoOrients>
 
         <!-- Whether the app launches in full screen. Optional. Mobile only. Default false -->
         <!-- (On iOS, this decides if the StatusBar is visible or not.) -->
@@ -40,6 +40,9 @@
     <icon>
         <image57x57>assets/icons/Icon.png</image57x57>
         <image72x72>assets/icons/Icon-72.png</image72x72>
+        <image76x76>assets/icons/Icon-76.png</image76x76>
+        <image120x120>assets/icons/Icon-120.png</image120x120>
+        <image152x152>assets/icons/Icon-152.png</image152x152>
         <image114x114>assets/icons/Icon@2x.png</image114x114>
         <image144x144>assets/icons/Icon-144.png</image144x144>
     </icon>
@@ -70,7 +73,7 @@
 
         <!-- Display Resolution for the app ("standard" or "high"). Optional. Default "standard" -->
         <requestedDisplayResolution>high</requestedDisplayResolution>
-        <assetsCar>Assets.car</assetsCar>
+        <!--<assetsCar>Assets.car</assetsCar>-->
     </iPhone>
 
     <!-- Android specific capabilities -->

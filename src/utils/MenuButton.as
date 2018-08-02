@@ -9,7 +9,7 @@ package utils
     {
         public function MenuButton(text:String, width:Number=128, height:Number=32)
         {
-            super(Root.assets.getTexture("button"), text);
+            super(Root.assets.getTexture("grey_button03"), text);
 
             this.scale9Grid = new Rectangle(12.5, 12.5, 20, 20);
             this.width = width;

@@ -2,6 +2,8 @@ package game
 {
 import extensions.ShineFilter;
 
+import starling.filters.CRTFilter;
+
 import starling.filters.FilterChain;
 
 import utils.RandomNumberRange;
@@ -43,8 +45,7 @@ public class Alien extends SteeredVehicle
 		];
 		public var _alienScaleFactor:Number;
 		public var _alienHealthFactor:Number;
-		public var _alienPointFactor:Number;
-		// animation states
+		public var _alienPointFactor:Number;		// animation states
 		public var _animLoop:MovieClip;
 		
 		public var _animLoopWidth:Number;
@@ -62,23 +63,19 @@ public class Alien extends SteeredVehicle
 			_alienHealthFactor = _alienArray[_alienId].healthFactor;
 			_alienPointFactor = _alienArray[_alienId].pointFactor;
 
-//            super(Root.assets.getTextures( _alienArray[_alienId].subTexture), 30);
-//            this.loop = true;
-//            this.alignPivot();
-//            this.color = _alienArray[_alienId].color;
-
 			var bubbleTexture:Texture = Root.assets.getTexture("bubble_white1");
 			whiteBubble = new Image( bubbleTexture );
 			whiteBubble.color = _alienArray[_alienId].color;
 			whiteBubble.alignPivot();
 			addChild(whiteBubble);
 
-
-			init_loopAnim();
-            var shineFlt:ShineFilter = new ShineFilter();
-            shineFlt.rgbTint = Vector.<Number>([1, 1, .7]);
-            this.filter = new FilterChain(new GlowFilter(0xFF6600, 0.6, 2), shineFlt);
-            //this.filter =new ShineFilter();
+            init_loopAnim();
+            trace("Bounds width:" + this.bounds.width);
+            trace("Bounds height:" + this.bounds.height);
+            trace("Width:" + width);
+            trace("Height:" + height);
+            _pheight = height;
+            _pwidth = width;
 		}
 		public override function dispose():void
 		{			

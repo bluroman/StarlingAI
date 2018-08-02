@@ -47,6 +47,8 @@ public class Play extends Scene {
 
     [Embed(source="../system/galaxy.pex", mimeType="application/octet-stream")]
     private static const GalaxyConfig:Class;
+    [Embed(source="../system/bluehyperdrive.pex", mimeType="application/octet-stream")]
+    private static const HyperDriveConfig:Class;
 
     [Embed(source="../system/galaxy_particle.png")]
     private static const GalaxyParticle:Class;
@@ -105,13 +107,13 @@ public class Play extends Scene {
 
     private function galaxyParticles():void
     {
-        var galaxyConfig:XML = XML(new GalaxyConfig());
+        var galaxyConfig:XML = XML(new HyperDriveConfig());
         var galaxyTexture:Texture = Texture.fromEmbeddedAsset(GalaxyParticle);
 
         _particleSystem1 = new PDParticleSystem(galaxyConfig,galaxyTexture);
         _particleSystem1.emitterX = Math.round( stage.stageWidth/2 );
         _particleSystem1.emitterY = Math.round( stage.stageHeight/2 );
-        _particleSystem1.start();
+        _particleSystem1.start(3);
 
         addChild(_particleSystem1);
         Starling.juggler.add(_particleSystem1);
@@ -159,7 +161,7 @@ public class Play extends Scene {
     }
     private function gameLoop( event:Event ):void
     {
-        if(_spaceShip.isDead)return;
+
         if(Constants.IS_GAME_PAUSED) return;
         _spaceShip.update();
 
@@ -178,6 +180,8 @@ public class Play extends Scene {
         {
             _spaceShip.x = stage.stageWidth;
         }
+        if(_spaceShip.isDead)return;
+        bulletGenerator.update();
 
         if(_isLevelLoading) return;
 
@@ -190,7 +194,7 @@ public class Play extends Scene {
             alienGenerator.startLevel(_level);
             return;
         }
-        bulletGenerator.update();
+
         alienGenerator.update();
         //kamicrashiManager.update();
         collisionManager.update();
@@ -205,6 +209,7 @@ public class Play extends Scene {
         _spaceShip.y = height +  _spaceShipHeight;// position relative to HUD at btm
         _spaceShip.x = Math.round(width >> 1);
         addChild( _spaceShip );
+        galaxyParticles();
 
         var launchTween:Tween = new Tween(_spaceShip, 1.0, Transitions.EASE_IN);
         var launchTween1:Tween = new Tween(_spaceShip, 2.0, Transitions.EASE_OUT);
@@ -216,11 +221,13 @@ public class Play extends Scene {
                 {
                     touchX = _spaceShip.x;touchY = _spaceShip.y;
                     stage.addEventListener(TouchEvent.TOUCH, onTouch);
+
                     //addEventListener( Event.ENTER_FRAME, gameLoop );
-                    galaxyParticles();
+
                 };
         SoundAS.playFx("shiplaunch");
         Starling.juggler.add(launchTween);
+        scoreKeeper.controllerScope = this;
 
     }
     public function startLoop():void
@@ -265,7 +272,7 @@ public class Play extends Scene {
                 trace("Y:"+movement.y);
                 if((diffX < 30) &&  (diffX > -30))
                 {
-                    frameNumber = uint(diffX + 30);
+                    frameNumber = diffX + 30;
                 }
                 if(diffX > 30)
                     frameNumber = 60;

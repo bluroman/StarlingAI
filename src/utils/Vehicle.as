@@ -3,8 +3,11 @@ package utils
 //import com.game.Kamicrashi;
 //import com.screens.ScreenHome;
 
+import flash.geom.Rectangle;
+
 import starling.core.Starling;
 import starling.display.MovieClip;
+import starling.utils.RectangleUtil;
 import starling.utils.deg2rad;
 
 //import starling.display.Shape;
@@ -23,6 +26,8 @@ import starling.utils.rad2deg;
 		protected var _position:Vector2D;
 		protected var _velocity:Vector2D;
         protected var _gameScope:Scene;
+        protected var _pwidth:Number;
+        protected var _pheight:Number;
 		
 		// potential edge behaviors
 		public static const WRAP:String = "wrap";
@@ -40,20 +45,7 @@ import starling.utils.rad2deg;
             //_gameScope = playGround;
 			_position = new Vector2D();
 			_velocity = new Vector2D();
-
-//            _movieClip = movieClip;
-//            _sprite = sprite;
-//            if(_movieClip)
-//            {
-//                Starling.juggler.add(_movieClip);
-//                addChild(_movieClip);
-//                movieClip.alignPivot();
-//            }
-//            else if(_sprite)
-//            {
-//                addChild(_sprite);
-//                _sprite.alignPivot();
-//            }
+            _pwidth = _pheight = 0;
         }
         public override function dispose():void
         {
@@ -91,9 +83,9 @@ import starling.utils.rad2deg;
 			
 			// rotate heading to match velocity
 			//rotation = _velocity.angle * 180 / Math.PI;
-			trace("velocity angle:" + _velocity.angle);
+			//trace("velocity angle:" + _velocity.angle);
 			rotation =  _velocity.angle - Math.PI / 2;
-			trace("rotation:" + _velocity.angle * 180 / Math.PI);
+			//trace("rotation:" + _velocity.angle * 180 / Math.PI);
 		}
 		
 		/**
@@ -101,27 +93,31 @@ import starling.utils.rad2deg;
 		 */
 		private function bounce():void
 		{
+//            trace("Bounds width:" + this.bounds.width);
+//            trace("Bounds height:" + this.bounds.height);
+//            trace("Width:" + width);
+//            trace("Height:" + height);
 			if(_gameScope.stage != null)
 			{
-				if(position.x > _gameScope.stage.stageWidth)
+				if(position.x > _gameScope.stage.stageWidth - _pwidth/2)
 				{
-					position.x = _gameScope.stage.stageWidth;
+					position.x = _gameScope.stage.stageWidth - _pwidth/2;
 					velocity.x *= -1;
 				}
-				else if(position.x < 0)
+				else if(position.x < 0 + _pwidth/2)
 				{
-					position.x = 0;
+					position.x = 0 + _pwidth/2;
 					velocity.x *= -1;
 				}
 				
-				if(position.y > _gameScope.stage.stageHeight)
+				if(position.y > _gameScope.stage.stageHeight - _pheight/2)
 				{
-					position.y = _gameScope.stage.stageHeight;
+					position.y = _gameScope.stage.stageHeight - _pheight/2;
 					velocity.y *= -1;
 				}
-				else if(position.y < 0)
+				else if(position.y < 0 + _pheight/2)
 				{
-					position.y = 0;
+					position.y = 0 + _pheight/2;
 					velocity.y *= -1;
 				}
 			}
@@ -140,6 +136,22 @@ import starling.utils.rad2deg;
 				if(position.y < 0) position.y = _gameScope.stage.stageHeight;
 			}
 		}
+        public function set pwidth(value:Number):void
+        {
+            _pwidth = value;
+        }
+        public function get pwidth():Number
+        {
+            return _pwidth;
+        }
+        public function set pheight(value:Number):void
+        {
+            _pheight = value;
+        }
+        public function get pheight():Number
+        {
+            return _pheight;
+        }
         public function set gameScope(value:Scene):void
         {
             _gameScope = value;
@@ -148,7 +160,6 @@ import starling.utils.rad2deg;
         {
             return _gameScope;
         }
-		
 		/**
 		 * Sets / gets what will happen if character hits edge.
 		 */

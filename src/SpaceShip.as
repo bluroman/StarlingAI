@@ -3,6 +3,18 @@
  */
 package {
 //import com.utils.ScoreKeeper;
+import feathers.core.PopUpManager;
+
+import flash.events.TimerEvent;
+
+import flash.utils.Timer;
+
+import starling.display.DisplayObject;
+
+import starling.display.Quad;
+
+import ui.Dialog;
+
 import utils.ScoreKeeper;
 import utils.Vector2D;
 
@@ -55,6 +67,9 @@ public class SpaceShip extends Sprite {
     public var _trailParticle:PDParticleSystem;
     private var _explosionParticle:ParticleSystem;
     private var offset:Vector2D;
+    private var _blinkTimer:Timer;
+    private var _blinkSpeed:Number = 100;
+    private var _blinkCount:Number = 0;
     public function SpaceShip(arg:Play) {
         _gameScope = arg;
         _shipImage = new Image( Root.assets.getTexture("spaceship/spaceship0030") );// start with middle size paddle
@@ -66,10 +81,31 @@ public class SpaceShip extends Sprite {
 
         _shipWidth = width;
         _shipHeight = height;
+        _blinkTimer = new Timer(_blinkSpeed);
+        _blinkTimer.addEventListener(TimerEvent.TIMER, blinkTimerHandler);
 
         setup_Explosion();
         initTrails();
         updateShip();
+    }
+    public function blink():void
+    {
+        _blinkTimer.start();
+        visible = false;
+    }
+    private function blinkTimerHandler(e:TimerEvent):void
+    {
+        visible = visible ? false : true;
+        _blinkCount++;
+
+        if(_blinkCount > 20)
+        {
+            e.target.stop();
+            visible = true;
+            _blinkCount = 0;
+            re_Setup();
+            //game_ReSetup();
+        }
     }
     private function initTrails():void
     {
@@ -118,7 +154,8 @@ public class SpaceShip extends Sprite {
         _explosionParticle.emitterX = _shipImage.x;
         _explosionParticle.emitterY = _shipImage.y;
         _explosionParticle.start(0.01);
-        Starling.juggler.delayCall(game_ReSetup, 1);
+        _explosionParticle.addEventListener(Event.COMPLETE, explosionCompletedHandler );
+        //Starling.juggler.delayCall(game_ReSetup, 1);
 
         addChild(_explosionParticle);
         Starling.juggler.add(_explosionParticle);
@@ -131,19 +168,43 @@ public class SpaceShip extends Sprite {
 
         if(_scoreKeeper.lives > 0)
         {
-            re_Setup();
+            //re_Setup();
+            blink();
         }
         else
         {
-            dispatchEventWith(Menu.LOSE_SCREEN, true);
+            /*var popUp:Image = new Image( Root.assets.getTexture("panelOverlay") );
+            PopUpManager.addPopUp( popUp, true, true, function():DisplayObject
+            {
+                var quad:Quad = new Quad(100, 100, 0x000000);
+                quad.alpha = 0.75;
+                return quad;
+            });*/
+            PopUpManager.addPopUp(
+                    new Dialog("If you see this video, 1 extra life obtained", "Continue?",
+                            [Dialog.BTN_CANCEL, Dialog.BTN_OK], dialogCallback)
+            );
+            //dispatchEventWith(Menu.LOSE_SCREEN, true);
         }
+    }
+    private function dialogCallback(button:String):void {
+        trace(button == Dialog.BTN_CANCEL ? "Why did you cancel?" : "Ok!");
+        if(button == Dialog.BTN_OK)
+        {
+            Root.admobManager.onLoadReward();
+            //_gameScope.scoreKeeper.livesEarned = 1;
+        }
+        else
+                dispatchEventWith(Menu.LOSE_SCREEN, true);
     }
 
     private function explosionCompletedHandler( event:Event ):void
     {
         _explosionParticle.removeEventListener( Event.COMPLETE, explosionCompletedHandler );
+        game_ReSetup();
+        //blink();
 
-        Starling.juggler.remove( _explosionParticle );
+        /*Starling.juggler.remove( _explosionParticle );
         removeChild( _explosionParticle, true );
         _explosionParticle = null;
         _scoreKeeper.livesLost = 1;
@@ -151,18 +212,18 @@ public class SpaceShip extends Sprite {
         if(_scoreKeeper.lives > 0)
         {
             re_Setup();
-        }
+        }*/
         //remove();
     }
     public function re_Setup():void
     {
-        _shipImage.alpha = 1.;
+        //_shipImage.alpha = 1.;
         //setup_Explosion();
         isDead = false;
     }
     public function explosion():void
     {
-        _shipImage.alpha = 0;
+        //_shipImage.alpha = 0;
         start_Explosion();
     }
     public override function dispose():void
