@@ -99,8 +99,7 @@ import utils.os;
             // If you don't want to support auto-orientation, you can delete this event handler.
             // Don't forget to update the AIR XML accordingly ("aspectRatio" and "autoOrients").
             stage.addEventListener(Event.RESIZE, onResize);
-            /*if(os.isIos || os.isAndroid)
-                sadmobManager.onLoadBanner();*/
+
         }
 
         private function showScene(scene:Class):void

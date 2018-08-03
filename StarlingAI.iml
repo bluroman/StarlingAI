@@ -26,13 +26,7 @@
             <entry library-id="cfdcf451-2191-4bea-b272-e3f3eb353d04">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="5feec7db-02ad-440e-a8dc-7fcacf003235">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-id="2554b896-c390-4120-b91a-9f59bb118635">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="a0a41fba-3309-436e-8470-daacf37df7bc">
               <dependency linkage="Merged" />
             </entry>
             <entry library-id="3ae46ad6-44ba-4565-b3c3-1f7a50be0950">
@@ -44,12 +38,27 @@
             <entry library-id="898d9ff5-6e51-41be-83b8-1c167c0d734b">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="de44651a-9826-4757-8367-8ca68bd0d14b">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="3acaa646-2bcb-4af7-87d4-5b9b081582c5">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="b988892e-5c56-4b4f-92ef-4cfe56ddafd3">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="2a530f00-bbef-4a56-8f81-43986e7c6b19">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="515a1657-cf57-4809-a359-f684d40e9b45">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler_30_0_0_107" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
@@ -132,29 +141,9 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="5feec7db-02ad-440e-a8dc-7fcacf003235" />
-        <CLASSES>
-          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.google.android.gms.play-services-ads-lite-15.0.1.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
         <properties id="2554b896-c390-4120-b91a-9f59bb118635" />
         <CLASSES>
           <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.android.support.support-v4-27.1.0.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="a0a41fba-3309-436e-8470-daacf37df7bc" />
-        <CLASSES>
-          <root url="jar://D:/Work/Flash_Related/AstroPanic/20180711/ANE/AdMob_ANE_Tuarua/com.google.android.gms.play-services-base-15.0.1.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -176,6 +165,56 @@
         <properties id="898d9ff5-6e51-41be-83b8-1c167c0d734b" />
         <CLASSES>
           <root url="jar://D:/Work/Flash_Related/AS3_Library/feathers-ui/feathers-ui-3.5.0/themes/TopcoatLightMobileTheme/swc/TopcoatLightMobileTheme.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="de44651a-9826-4757-8367-8ca68bd0d14b" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_adsLite.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="3acaa646-2bcb-4af7-87d4-5b9b081582c5" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_base.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="b988892e-5c56-4b4f-92ef-4cfe56ddafd3" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_basement.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="2a530f00-bbef-4a56-8f81-43986e7c6b19" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_games.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="515a1657-cf57-4809-a359-f684d40e9b45" />
+        <CLASSES>
+          <root url="jar://D:/Work/Flash_Related/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_tasks.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

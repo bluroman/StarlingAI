@@ -8,8 +8,10 @@ import com.tuarua.fre.ANEError;
 import flash.desktop.NativeApplication;
 
 import flash.events.Event;
+import flash.system.Capabilities;
 
 import starling.core.Starling;
+import starling.utils.SystemUtil;
 
 public class AdMobManager {
     public var scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
@@ -17,7 +19,8 @@ public class AdMobManager {
     private var rewarded:Boolean;
     public function AdMobManager() {
         trace("System:" + os.isIos);
-        if(os.isIos || os.isAndroid)
+        trace("System Name" + Capabilities.os.toLowerCase());
+        if(os.isIos || SystemUtil.platform == "AND")
         {
             NativeApplication.nativeApplication.addEventListener(flash.events.Event.EXITING, onExiting);
             adMobANE.addEventListener(AdMobEvent.ON_CLICKED, onAdClicked);

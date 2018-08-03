@@ -10,11 +10,13 @@ import flash.filesystem.FileMode;
 import flash.filesystem.FileStream;
 import flash.system.Capabilities;
 import flash.system.System;
+import flash.ui.Keyboard;
 import flash.utils.ByteArray;
 
 import starling.assets.AssetManager;
 import starling.core.Starling;
 import starling.events.Event;
+import starling.events.KeyboardEvent;
 import starling.utils.StringUtil;
 import starling.utils.SystemUtil;
 
@@ -63,6 +65,26 @@ public class Main extends Sprite
                     flash.events.Event.ACTIVATE, function (e:*):void { _starling.start(); });
             NativeApplication.nativeApplication.addEventListener(
                     flash.events.Event.DEACTIVATE, function (e:*):void { _starling.stop(true); });
+        }
+        if(SystemUtil.isAndroid)
+        {
+            NativeApplication.nativeApplication.addEventListener(KeyboardEvent.KEY_DOWN, CheckKeypress);
+            Starling.current.nativeStage.frameRate = 60;
+        }
+    }
+    public function CheckKeypress(event:KeyboardEvent):void {
+        switch (event.keyCode) {
+            case Keyboard.BACK:
+                event.preventDefault();
+                trace("Back key is pressed.");
+                NativeApplication.nativeApplication.exit();
+                break;
+            case Keyboard.MENU:
+                trace("Menu key is pressed.");
+                break;
+            case Keyboard.SEARCH:
+                trace("Search key is pressed.");
+                break;
         }
     }
 

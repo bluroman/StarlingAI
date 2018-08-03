@@ -119,6 +119,10 @@ public class ScreenHome extends Scene
         spaceParticles();
 
         SoundAS.playLoop("background");
+        /*if(SystemUtil.platform == "AND")
+        {
+            Root.admobManager.onLoadBanner();
+        }*/
 
         //_vehicle = new SteeredVehicle();
         //addChild(_vehicle);

@@ -5,9 +5,11 @@ import com.marpies.ane.gameservices.events.GSAuthEvent;
 import com.marpies.ane.gameservices.events.GSIdentityEvent;
 import com.marpies.ane.gameservices.events.GSLeaderboardEvent;
 
+import starling.utils.SystemUtil;
+
 public class GameCenterManager {
     public function GameCenterManager() {
-        if(os.isIos)
+        if(os.isIos || SystemUtil.platform == "AND")
         {
             var showLogs:Boolean = true;
             GameServices.init(showLogs);
@@ -27,38 +29,54 @@ public class GameCenterManager {
 
             GameServices.achievements.addEventListener( GSAchievementEvent.UPDATE_SUCCESS, onAchievementUnlockSuccess );
             GameServices.achievements.addEventListener( GSAchievementEvent.UPDATE_ERROR, onAchievementUnlockError );
+            if(os.isIos)
+            {
+                GameServices.achievements.addEventListener( GSAchievementEvent.RESET_SUCCESS, onAchievementResetSuccess );
+                GameServices.achievements.addEventListener( GSAchievementEvent.RESET_ERROR, onAchievementResetError );
 
-            GameServices.achievements.addEventListener( GSAchievementEvent.RESET_SUCCESS, onAchievementResetSuccess );
-            GameServices.achievements.addEventListener( GSAchievementEvent.RESET_ERROR, onAchievementResetError );
+                GameServices.achievements.resetAll();
+            }
 
-            GameServices.achievements.resetAll();
             trace("Constructor for Root");
         }
     }
     public function resetAchievements():void {
-        if(os.isIos)
+        if(os.isIos)//ios only
             GameServices.achievements.resetAll();
     }
     public function setProgress(id:String, percent:Number):void {
-        if(os.isIos)
+        if(os.isIos)//ios only
             GameServices.achievements.setProgress(id, percent);
     }
     public function unlockAchievement(id:String):void{
-        GameServices.achievements.unlock(id);
+        if(os.isIos || SystemUtil.platform == "AND")
+            GameServices.achievements.unlock(id);
     }
     public function submitLeaderboard(score:Number):void{
-        if(os.isIos)
-            GameServices.leaderboards.report( Constants.LEADERBOARD_ID, score );
+        if(os.isIos )
+            GameServices.leaderboards.report( Constants.LEADERBOARD_ID_IOS, score );
+        else if (SystemUtil.platform == "AND")
+            GameServices.leaderboards.report( Constants.LEADERBOARD_ID_AND, score );
+        else
+                trace("Not support Leaderboard");
     }
     public function showLeaderboard():void{
 
-        if(os.isIos)
+        if(os.isIos || SystemUtil.platform == "AND")
         {
             trace( GameServices.isAuthenticated );
             if(!GameServices.isAuthenticated)
                 GameServices.authenticate();
             else
-                GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID);
+            {
+                if(os.isIos)
+                    GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_IOS);
+                else if (SystemUtil.platform == "AND")
+                    GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_AND);
+                else
+                        trace('Not support leaderboard native ui');
+            }
+
         }
     }
     private function onAchievementResetError(event:GSAchievementEvent):void {
@@ -102,8 +120,13 @@ public class GameCenterManager {
     }
 
     private function onGameServicesAuthSuccess( event:GSAuthEvent ):void {
-        trace( "User authenticated:", event.player );
-        GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID);
+        trace("User authenticated:", event.player);
+        if (os.isIos)
+            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_IOS);
+        else if (SystemUtil.platform == "AND")
+            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_AND);
+        else
+            trace('Not support leaderboard native ui');
     }
 
     private function onGameServicesAuthError( event:GSAuthEvent ):void {

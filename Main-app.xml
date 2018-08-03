@@ -88,17 +88,14 @@
                  <supports-screens android:normalScreens="true"/>
                  <uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>
                  <application android:enabled="true">
+                 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+                  <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ 386812349087" />
                      <activity android:excludeFromRecents="false">
                          <intent-filter>
                              <action android:name="android.intent.action.MAIN"/>
                              <category android:name="android.intent.category.LAUNCHER"/>
                          </intent-filter>
                      </activity>
-                  <meta-data android:name="com.google.android.gms.games.APP_ID"
-            android:value="\ 386812349087" />
-        <meta-data android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
-                  <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
                   <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
                   android:theme="@android:style/Theme.Translucent" />
                  </application>
@@ -108,12 +105,17 @@
     </android>
     <extensions>
     <extensionID>com.tuarua.frekotlin</extensionID>
-    <extensionID>com.google.android.gms.play-services-base</extensionID>
-    <extensionID>com.google.android.gms.play-services-ads-lite</extensionID>
+    <!--<extensionID>com.google.android.gms.play-services-base</extensionID>-->
+    <!--<extensionID>com.google.android.gms.play-services-ads-lite</extensionID>-->
     <extensionID>com.android.support.support-v4</extensionID>
     <extensionID>com.google.code.gson.gson</extensionID>
         <extensionID>com.tuarua.AdMobANE</extensionID>
         <extensionID>com.marpies.ane.gameServices</extensionID>
+        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>
+        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>
+        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
+        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.games</extensionID>
+        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.tasks</extensionID>
     </extensions>
 
 </application>
