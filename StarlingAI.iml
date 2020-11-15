@@ -23,38 +23,14 @@
             <entry library-id="347b3fe1-6d64-4bcf-beb9-e768b333c8f7">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="514cb2db-24f9-4841-9cda-39ce6361561c">
+            <entry library-id="f9571653-e301-4a70-a153-113c38a206b7">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="9bd06007-eacb-4dd6-af34-0bb1939b729e">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="76d0f0e9-250e-4c04-a35a-e478026a12b3">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="d4d91450-eadd-44c0-b24b-e2cbcc221864">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="79b07777-ffb4-4347-9ac8-9965d1a9b0d5">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="131639cb-0352-4ef5-bc24-46b27e21ca43">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="d6792d9f-30f4-4cba-ae53-035ccac05baf">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="c8a4f6db-ffb9-401b-aef9-b206f3b8fe3b">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="6a92b62f-1bc2-482b-9ca8-1f729bb84ed7">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="cd2c669b-6b17-48da-a1d1-459252b5873d">
+            <entry library-id="efb84475-1ed5-4c0a-af5d-2ef4e79cf565">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="32_0_0_116" />
+          <sdk name="33_1_1_300" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
@@ -72,7 +48,7 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets/icons/Assets.car" path-in-package="Assets.car" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Frameworks" path-in-package="Frameworks" />
           </files-to-package>
-          <AirSigningOptions keystore-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/ios_dev_hoonnam.p12" provisioning-profile-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/TestingAppD.mobileprovision" />
+          <AirSigningOptions keystore-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/DeveloperCer.p12" provisioning-profile-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/TestingAppD (1).mobileprovision" />
         </packaging-ios>
       </configuration>
     </configurations>
@@ -84,7 +60,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="32_0_0_116" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="33_1_1_300" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Starling-Framework" level="application" />
     <orderEntry type="library" exported="" name="Starling-Extension-Particle-System" level="application" />
@@ -142,9 +118,9 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="514cb2db-24f9-4841-9cda-39ce6361561c" />
+        <properties id="f9571653-e301-4a70-a153-113c38a206b7" />
         <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/Admob/AdMobANE.ane!/" />
+          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/Admob/v2.9.0/AdMobANE.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -152,89 +128,9 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="9bd06007-eacb-4dd6-af34-0bb1939b729e" />
+        <properties id="efb84475-1ed5-4c0a-af5d-2ef4e79cf565" />
         <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/AdMob_ANE_Tuarua/com.android.support.support-v4-27.1.0.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="76d0f0e9-250e-4c04-a35a-e478026a12b3" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/com.marpies.ane.gameServices.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="d4d91450-eadd-44c0-b24b-e2cbcc221864" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_adsLite.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="79b07777-ffb4-4347-9ac8-9965d1a9b0d5" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_base.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="131639cb-0352-4ef5-bc24-46b27e21ca43" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_basement.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="d6792d9f-30f4-4cba-ae53-035ccac05baf" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_games.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="c8a4f6db-ffb9-401b-aef9-b206f3b8fe3b" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_tasks.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="6a92b62f-1bc2-482b-9ca8-1f729bb84ed7" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/Android-ANE-Dependencies-master/anes/kotlin/com.tuarua.frekotlin.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="cd2c669b-6b17-48da-a1d1-459252b5873d" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/Android-ANE-Dependencies-master/anes/misc/com.google.code.gson.gson-2.8.4.ane!/" />
+          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/ANE/Only_IOS/com.marpies.ane.gameServices.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

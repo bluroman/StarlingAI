@@ -1,8 +1,9 @@
 package utils {
-import com.tuarua.AdMobANE;
-import com.tuarua.admobane.AdMobEvent;
-import com.tuarua.admobane.AdSize;
-import com.tuarua.admobane.Targeting;
+import com.tuarua.AdMob;
+import com.tuarua.admob.AdMobEvent;
+import com.tuarua.admob.AdSize;
+import com.tuarua.admob.MaxAdContentRating;
+import com.tuarua.admob.Targeting;
 import com.tuarua.fre.ANEError;
 
 import flash.desktop.NativeApplication;
@@ -15,7 +16,7 @@ import starling.utils.SystemUtil;
 
 public class AdMobManager {
     public var scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
-    private var adMobANE:AdMobANE = new AdMobANE();
+    private var adMobANE:AdMob;
     private var rewarded:Boolean;
     public function AdMobManager() {
         trace("System:" + os.isIos);
@@ -23,6 +24,7 @@ public class AdMobManager {
         if(os.isIos || SystemUtil.platform == "AND")
         {
             NativeApplication.nativeApplication.addEventListener(flash.events.Event.EXITING, onExiting);
+            adMobANE = AdMob.shared();
             adMobANE.addEventListener(AdMobEvent.ON_CLICKED, onAdClicked);
             adMobANE.addEventListener(AdMobEvent.ON_CLOSED, onAdClosed);
             adMobANE.addEventListener(AdMobEvent.ON_IMPRESSION, onAdImpression);
@@ -33,7 +35,8 @@ public class AdMobManager {
             adMobANE.addEventListener(AdMobEvent.ON_VIDEO_STARTED, onVideoStarted);
             adMobANE.addEventListener(AdMobEvent.ON_VIDEO_COMPLETE, onVideoComplete);
             adMobANE.addEventListener(AdMobEvent.ON_REWARDED, onRewarded);
-            adMobANE.init(Constants.ADMOB_APP_ID, 0.5, true, Starling.current.contentScaleFactor);
+            adMobANE.init(0.5, true, Starling.current.contentScaleFactor, true);
+            //adMobANE.init(Constants.ADMOB_APP_ID, 0.5, true, Starling.current.contentScaleFactor);
             rewarded = false;
             //on iOS to retrieve your deviceID run: adt -devices -platform iOS
 //            var vecDevices:Vector.<String> = new <String>[];
@@ -47,7 +50,7 @@ public class AdMobManager {
      * It's very important to call adMobANE.dispose(); when the app is exiting.
      */
     private function onExiting(event:flash.events.Event):void {
-        adMobANE.dispose();
+        AdMob.dispose();
     }
 //    public override function dispose():void
 //    {
@@ -70,7 +73,7 @@ public class AdMobManager {
     public function onLoadInterstitial():void {
         try {
             var targeting:Targeting = new Targeting();
-            targeting.forChildren = false;
+            targeting.tagForChildDirectedTreatment = false;
 
             adMobANE.interstitial.adUnit = os.isIos ? Constants.ADMOB_FULL_IOS_ID: Constants.ADMOB_FULL_ANDROID_ID;
             adMobANE.interstitial.targeting = targeting;
@@ -83,7 +86,7 @@ public class AdMobManager {
     public function onLoadReward():void {
         try {
             var targeting:Targeting = new Targeting();
-            targeting.forChildren = false;
+            targeting.tagForChildDirectedTreatment = false;
 
             adMobANE.rewardVideo.adUnit = os.isIos ? Constants.ADMOB_REWARD_IOS_ID: Constants.ADMOB_REWARD_ANDROID_ID;
             adMobANE.rewardVideo.targeting = targeting;
@@ -154,7 +157,10 @@ public class AdMobManager {
     public function onLoadBanner():void {
         try {
             var targeting:Targeting = new Targeting();
-            targeting.forChildren = false;
+            targeting.tagForChildDirectedTreatment = true;
+            targeting.maxAdContentRating = MaxAdContentRating.PARENTAL_GUIDANCE;
+            targeting.contentUrl = "http://googleadsdeveloper.blogspot.com/2016/03/rewarded-video-support-for-admob.html";
+            //targeting.forChildren = false;
             //targeting.contentUrl = "http://googleadsdeveloper.blogspot.com/2016/03/rewarded-video-support-for-admob.html";
 
             trace("adMobANE.banner.availableSizes:", adMobANE.banner.availableSizes);
