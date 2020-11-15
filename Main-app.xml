@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/32.0">
+<application xmlns="http://ns.adobe.com/air/application/33.1">
 
     <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
     <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
@@ -60,6 +60,8 @@
             </array>
             <key>MinimumOSVersion</key>
             <string>9.0</string>
+            <key>GADApplicationIdentifier</key>
+            <string>ca-app-pub-6964194614288140~1609391311</string>
             <key>NSAppTransportSecurity</key>
             <dict>
                 <key>NSAllowsArbitraryLoads</key>
@@ -104,18 +106,18 @@
         </manifestAdditions>
     </android>
     <extensions>
-    <extensionID>com.tuarua.frekotlin</extensionID>
-    <!--<extensionID>com.google.android.gms.play-services-base</extensionID>-->
-    <!--<extensionID>com.google.android.gms.play-services-ads-lite</extensionID>-->
-    <extensionID>com.android.support.support-v4</extensionID>
-    <extensionID>com.google.code.gson.gson</extensionID>
+<!--    <extensionID>com.tuarua.frekotlin</extensionID>-->
+<!--    &lt;!&ndash;<extensionID>com.google.android.gms.play-services-base</extensionID>&ndash;&gt;-->
+<!--    &lt;!&ndash;<extensionID>com.google.android.gms.play-services-ads-lite</extensionID>&ndash;&gt;-->
+<!--    <extensionID>com.android.support.support-v4</extensionID>-->
+<!--    <extensionID>com.google.code.gson.gson</extensionID>-->
         <extensionID>com.tuarua.AdMobANE</extensionID>
         <extensionID>com.marpies.ane.gameServices</extensionID>
-        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>
-        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>
-        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
-        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.games</extensionID>
-        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.tasks</extensionID>
+<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>-->
+<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>-->
+<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>-->
+<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.games</extensionID>-->
+<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.tasks</extensionID>-->
     </extensions>
 
 </application>
