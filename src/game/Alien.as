@@ -36,12 +36,12 @@ public class Alien extends SteeredVehicle
 		public var dy:Number;
 		public var _alienId:int;
 		private var _alienArray:Array = [
-			{color:Color.YELLOW, subTexture:"ShiningStar/ShiningStar", scaleFactor:.2, healthFactor:10, pointFactor:55},
-			{color:Color.BLUE, subTexture:"ShiningStar/ShiningStar", scaleFactor:.3, healthFactor:10, pointFactor:50},
-			{color:Color.RED, subTexture:"ShiningStar/ShiningStar", scaleFactor:.4, healthFactor:10, pointFactor:40},
-			{color:Color.GREEN, subTexture:"ShiningStar/ShiningStar", scaleFactor:.8, healthFactor:10, pointFactor:20},
-			{color:Color.WHITE, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.0, healthFactor:10, pointFactor:10, resizePaddleFactor:"decrease"},
-			{color:Color.PURPLE, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.2, healthFactor:10, pointFactor:5}
+			{color:0xffff00, subTexture:"ShiningStar/ShiningStar", scaleFactor:.8, healthFactor:10, pointFactor:55},
+			{color:0xb3b300, subTexture:"ShiningStar/ShiningStar", scaleFactor:.9, healthFactor:10, pointFactor:50},
+			{color:0x99ff00, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.0, healthFactor:10, pointFactor:40},
+			{color:0xffffbf, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.2, healthFactor:10, pointFactor:20},
+			{color:0xaa00ff, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.4, healthFactor:10, pointFactor:10, resizePaddleFactor:"decrease"},
+			{color:0xb38f00, subTexture:"ShiningStar/ShiningStar", scaleFactor:1.5, healthFactor:10, pointFactor:5}
 		];
 		public var _alienScaleFactor:Number;
 		public var _alienHealthFactor:Number;
