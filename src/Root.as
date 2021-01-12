@@ -1,6 +1,6 @@
 package
 {
-import com.tuarua.AdMobANE;
+//import com.tuarua.AdMobANE;
 
 import flash.net.registerClassAlias;
 
@@ -84,8 +84,9 @@ import utils.os;
                     XML(new FontXml()));
 
             TextField.registerCompositor(font,Constants.DEFAULT_FONT_2);
-            sadmobManager = new AdMobManager();
+
             sgamecenterManager = new GameCenterManager();
+            sadmobManager = new AdMobManager();
         }
         
         public function start(assets:AssetManager):void

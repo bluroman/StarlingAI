@@ -12,17 +12,20 @@ import flash.events.Event;
 import flash.system.Capabilities;
 
 import starling.core.Starling;
+import starling.display.Sprite;
 import starling.utils.SystemUtil;
 
-public class AdMobManager {
+public class AdMobManager extends starling.display.Sprite {
     public var scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
     private var adMobANE:AdMob;
     private var rewarded:Boolean;
+    private var _ship:SpaceShip;
     public function AdMobManager() {
         trace("System:" + os.isIos);
         trace("System Name" + Capabilities.os.toLowerCase());
         if(os.isIos || SystemUtil.platform == "AND")
         {
+            trace("adMobANE init start");
             NativeApplication.nativeApplication.addEventListener(flash.events.Event.EXITING, onExiting);
             adMobANE = AdMob.shared();
             adMobANE.addEventListener(AdMobEvent.ON_CLICKED, onAdClicked);
@@ -38,6 +41,7 @@ public class AdMobManager {
             adMobANE.init(0.5, true, Starling.current.contentScaleFactor, true);
             //adMobANE.init(Constants.ADMOB_APP_ID, 0.5, true, Starling.current.contentScaleFactor);
             rewarded = false;
+            trace("adMobANE init end");
             //on iOS to retrieve your deviceID run: adt -devices -platform iOS
 //            var vecDevices:Vector.<String> = new <String>[];
 //            vecDevices.push("09872C13E51671E053FC7DC8DFC0C689"); //my Android Nexus
@@ -70,8 +74,9 @@ public class AdMobManager {
         rewarded = true;
 
     }
-    public function onLoadInterstitial():void {
+    public function onLoadInterstitial(ship:SpaceShip):void {
         try {
+            _ship = ship;
             var targeting:Targeting = new Targeting();
             targeting.tagForChildDirectedTreatment = false;
 
@@ -83,8 +88,9 @@ public class AdMobManager {
         }
     }
 
-    public function onLoadReward():void {
+    public function onLoadReward(ship:SpaceShip):void {
         try {
+            _ship = ship;
             var targeting:Targeting = new Targeting();
             targeting.tagForChildDirectedTreatment = false;
 
@@ -134,6 +140,11 @@ public class AdMobManager {
         {
             scoreKeeper.livesEarned = 1;
             rewarded = false;
+        }
+        else
+        {
+            trace("Go To Lose Screen");
+            _ship.LoseScreen();
         }
             //scoreKeeper.livesEarned = 1;
     }
