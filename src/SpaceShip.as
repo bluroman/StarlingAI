@@ -44,6 +44,7 @@ use namespace SoundAS;
 public class SpaceShip extends Sprite {
     private var _scoreKeeper:ScoreKeeper = ScoreKeeper.getInstance();
     private var _gameScope:Play;
+    private var _startReward:Boolean = false;
 
     //private var _animExplosion:MovieClip;
 
@@ -165,6 +166,7 @@ public class SpaceShip extends Sprite {
     private function game_ReSetup():void
     {
         _scoreKeeper.livesLost = 1;
+        trace ("Game Re Setup");
 
         if(_scoreKeeper.lives > 0)
         {
@@ -187,15 +189,24 @@ public class SpaceShip extends Sprite {
             //dispatchEventWith(Menu.LOSE_SCREEN, true);
         }
     }
+    public function LoseScreen():void
+    {
+        trace("Lose Screen Go To");
+        dispatchEventWith(Menu.LOSE_SCREEN, true);
+    }
     private function dialogCallback(button:String):void {
         trace(button == Dialog.BTN_CANCEL ? "Why did you cancel?" : "Ok!");
         if(button == Dialog.BTN_OK)
         {
-            Root.admobManager.onLoadReward();
+            Root.admobManager.onLoadReward(this);
+            _startReward = true;
             //_gameScope.scoreKeeper.livesEarned = 1;
         }
         else
-                dispatchEventWith(Menu.LOSE_SCREEN, true);
+        {
+            Root.admobManager.onLoadInterstitial(this);
+        }
+                //dispatchEventWith(Menu.LOSE_SCREEN, true);
     }
 
     private function explosionCompletedHandler( event:Event ):void

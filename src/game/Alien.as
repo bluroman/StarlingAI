@@ -35,6 +35,7 @@ public class Alien extends SteeredVehicle
 		public var dx:Number;
 		public var dy:Number;
 		public var _alienId:int;
+		public var isChanged:Boolean;
 		private var _alienArray:Array = [
 			{color:0xffff00, subTexture:"ShiningStar/ShiningStar", scaleFactor:.8, healthFactor:10, pointFactor:55},
 			{color:0xb3b300, subTexture:"ShiningStar/ShiningStar", scaleFactor:.9, healthFactor:10, pointFactor:50},
@@ -58,6 +59,7 @@ public class Alien extends SteeredVehicle
             //_gameScope = playGround;
 			speed = 1;
 			_alienId = RandomNumberRange.getRandomInt( 0, _alienArray.length-1 );
+			isChanged = false;
 
 			_alienScaleFactor = _alienArray[_alienId].scaleFactor;
 			_alienHealthFactor = _alienArray[_alienId].healthFactor;

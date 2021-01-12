@@ -11,6 +11,7 @@ public class GameCenterManager {
     public function GameCenterManager() {
         if(os.isIos || SystemUtil.platform == "AND")
         {
+            trace ("GameServices.init start");
             var showLogs:Boolean = true;
             GameServices.init(showLogs);
             GameServices.addEventListener(GSAuthEvent.SUCCESS, onGameServicesSilentAuthSuccess);
@@ -36,6 +37,7 @@ public class GameCenterManager {
 
                 GameServices.achievements.resetAll();
             }
+            trace ("GameServices.init End");
 
             trace("Constructor for Root");
         }
@@ -65,6 +67,7 @@ public class GameCenterManager {
         if(os.isIos || SystemUtil.platform == "AND")
         {
             trace( GameServices.isAuthenticated );
+            trace("show Leaderboard!!!")
             if(!GameServices.isAuthenticated)
                 GameServices.authenticate();
             else

@@ -21,6 +21,8 @@ import starling.utils.deg2rad;
 
 import treefortress.sound.SoundAS;
 
+import utils.Vector2D;
+
 import utils.Vehicle;
 
 
@@ -74,7 +76,7 @@ public class AlienGenerator extends Sprite
             if(a == _arrayAliens[i])
             {
                 a._alienHealthFactor -= 5;
-                if(a._alienHealthFactor > 0)
+                if(a._alienHealthFactor > 5)
                 {
 //                    _bubblePop = new BubblePop();
 //                    _bubblePop.x = a.x;
@@ -85,6 +87,7 @@ public class AlienGenerator extends Sprite
 //                    _gameScope.addChild(_bubblePop);
 //                    Starling.juggler.add(_bubblePop);
                     a.whiteBubble.visible = false;
+                    a.isChanged = true;
                     a.edgeBehavior = Vehicle.WRAP;
                 }
                 else
@@ -92,6 +95,7 @@ public class AlienGenerator extends Sprite
                     a.whiteBubble.visible = true;
                     a._alienHealthFactor = 10;
                     a.edgeBehavior = Vehicle.BOUNCE;
+                    a.isChanged = false;
                     _arrayAliens.splice(i, 1);
                     Starling.juggler.remove(a._animLoop);
                     a.removeFromParent(false);

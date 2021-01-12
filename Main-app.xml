@@ -4,7 +4,7 @@
     <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
     <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
     <name>BubblySpace</name> <!-- The name that is displayed below the app icon. -->
-    <versionNumber>3.0.0</versionNumber> <!-- Required. -->
+    <versionNumber>3.1.2</versionNumber> <!-- Required. -->
 
     <!-- Settings for the application's initial window. Required. -->
     <initialWindow>
@@ -45,6 +45,7 @@
         <image152x152>assets/icons/Icon-152.png</image152x152>
         <image114x114>assets/icons/Icon@2x.png</image114x114>
         <image144x144>assets/icons/Icon-144.png</image144x144>
+        <image167x167>assets/icons/Icon-167.png</image167x167>
     </icon>
 
     <!-- iOS specific capabilities -->
@@ -71,7 +72,20 @@
                 <key>NSAllowsArbitraryLoadsInWebContent</key>
                 <true/>
              </dict>
+             <key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to deliver personalized ads to you.</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
         ]]></InfoAdditions>
+<!--        <Entitlements><![CDATA[-->
+<!--            <key>aps-environment</key>-->
+<!--            <string>production</string>-->
+<!--        ]]></Entitlements>-->
 
         <!-- Display Resolution for the app ("standard" or "high"). Optional. Default "standard" -->
         <requestedDisplayResolution>high</requestedDisplayResolution>
@@ -80,30 +94,69 @@
 
     <!-- Android specific capabilities -->
     <android>
-        <manifestAdditions>
-            <![CDATA[
-             <manifest android:installLocation="auto">
-                 <uses-permission android:name="android.permission.INTERNET"/>
-                 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-                 <uses-configuration android:reqFiveWayNav="true"/>
-                 <supports-screens android:normalScreens="true"/>
-                 <uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>
-                 <application android:enabled="true">
-                 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+	<!-- Required by older versions of Google Play services to create IID tokens -->
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enabled="true">
+		<meta-data android:name="android.max_aspect" android:value="2.1" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
                   <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ 386812349087" />
-                     <activity android:excludeFromRecents="false">
-                         <intent-filter>
-                             <action android:name="android.intent.action.MAIN"/>
-                             <category android:name="android.intent.category.LAUNCHER"/>
-                         </intent-filter>
-                     </activity>
-                  <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-                  android:theme="@android:style/Theme.Translucent" />
-                 </application>
-             </manifest>
-         ]]>
-        </manifestAdditions>
+		<activity android:excludeFromRecents="false" android:hardwareAccelerated="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713" />
+		<!-- Delay app measurement until MobileAds.initialize() is called. -->
+		<meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true" />
+		<receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"></receiver>
+		<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+		<service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:enabled="true" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE" />
+		<service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+		</service>
+		<activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:theme="@android:style/Theme.Translucent" />
+		<provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:authorities="com.google.android.gms.ads.mobileadsinitprovider" android:exported="false" android:initOrder="100" />
+	</application>
+</manifest>]]></manifestAdditions>
+<!--        <manifestAdditions>-->
+<!--            <![CDATA[-->
+<!--             <manifest android:installLocation="auto">-->
+<!--                 <uses-permission android:name="android.permission.INTERNET"/>-->
+<!--                 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+<!--                 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+<!--                 <uses-configuration android:reqFiveWayNav="true"/>-->
+<!--                 <supports-screens android:normalScreens="true"/>-->
+<!--                 <uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>-->
+<!--                 <application android:enabled="true">-->
+<!--                 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>-->
+<!--                  <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ 386812349087" />-->
+<!--                     <activity android:excludeFromRecents="false">-->
+<!--                         <intent-filter>-->
+<!--                             <action android:name="android.intent.action.MAIN"/>-->
+<!--                             <category android:name="android.intent.category.LAUNCHER"/>-->
+<!--                         </intent-filter>-->
+<!--                     </activity>-->
+<!--                 &lt;!&ndash; Delay app measurement until MobileAds.initialize() is called. &ndash;&gt;-->
+<!--		<meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true" />-->
+<!--		<receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"></receiver>-->
+<!--		<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />-->
+<!--		<service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:enabled="true" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE" />-->
+<!--                  <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
+<!--                  android:theme="@android:style/Theme.Translucent" />-->
+<!--                 </application>-->
+<!--             </manifest>-->
+<!--         ]]>-->
+<!--        </manifestAdditions>-->
     </android>
     <extensions>
 <!--    <extensionID>com.tuarua.frekotlin</extensionID>-->
@@ -111,7 +164,17 @@
 <!--    &lt;!&ndash;<extensionID>com.google.android.gms.play-services-ads-lite</extensionID>&ndash;&gt;-->
 <!--    <extensionID>com.android.support.support-v4</extensionID>-->
 <!--    <extensionID>com.google.code.gson.gson</extensionID>-->
+<!--        <extensionID>com.tuarua.AdMobANE</extensionID>-->
         <extensionID>com.tuarua.AdMobANE</extensionID>
+        <extensionID>com.tuarua.frekotlin</extensionID>
+        <extensionID>com.google.code.gson.gson</extensionID>
+        <extensionID>androidx.legacy.legacy-support-v4</extensionID>
+        <extensionID>com.google.android.gms.play-services-measurement</extensionID>
+        <extensionID>com.google.android.gms.play-services-base</extensionID>
+        <extensionID>com.google.android.gms.play-services-ads-lite</extensionID>
+        <extensionID>com.google.android.ump.user-messaging-platform</extensionID>
+        <extensionID>com.google.android.gms.play-services-games</extensionID>
+        <extensionID>com.google.android.gms.play-services-auth</extensionID>
         <extensionID>com.marpies.ane.gameServices</extensionID>
 <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>-->
 <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>-->
