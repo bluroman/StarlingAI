@@ -75,6 +75,7 @@ public class AdMobManager extends starling.display.Sprite {
             })
             //adMobANE.init(0.5, true, Starling.current.contentScaleFactor, true);
             rewarded = false;
+            trace("adMobANE init end");
             //on iOS to retrieve your deviceID run: adt -devices -platform iOS
 //            var vecDevices:Vector.<String> = new <String>[];
 //            vecDevices.push("09872C13E51671E053FC7DC8DFC0C689"); //my Android Nexus

@@ -9,57 +9,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="323c013b-7fba-495a-8405-0fc71de7b873" name="Default Changelist" comment="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented">
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/module.modulemap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FlashRuntimeExtensions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm64.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/armv7.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Main-app.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StarlingAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StarlingAI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCore.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreFoundation.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreGraphics.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreImage.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreImage.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftDarwin.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftDarwin.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftDispatch.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftDispatch.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftFoundation.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftMetal.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftMetal.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftObjectiveC.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftQuartzCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftQuartzCore.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftUIKit.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftUIKit.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftos.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftos.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Root.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Root.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FlashRuntimeExtensions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/module.modulemap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/AdMobManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AdMobManager.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/GameCenterManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GameCenterManager.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
