@@ -1,0 +1,110 @@
+<application xmlns="http://ns.adobe.com/air/application/33.1">
+  <id>com.bluroman.BubblySpace</id>
+  <filename>BubblySpace</filename>
+  <name>BubblySpace</name>
+  <versionNumber>3.3.6</versionNumber>
+  <initialWindow>
+    <content>Main.swf</content>
+    <aspectRatio>landscape</aspectRatio>
+    <autoOrients>true</autoOrients>
+    <fullScreen>true</fullScreen>
+    <renderMode>direct</renderMode>
+    <depthAndStencil>true</depthAndStencil>
+  </initialWindow>
+  <icon>
+    <image57x57>assets/icons/Icon.png</image57x57>
+    <image72x72>assets/icons/Icon-72.png</image72x72>
+    <image76x76>assets/icons/Icon-76.png</image76x76>
+    <image120x120>assets/icons/Icon-120.png</image120x120>
+    <image152x152>assets/icons/Icon-152.png</image152x152>
+    <image114x114>assets/icons/Icon@2x.png</image114x114>
+    <image144x144>assets/icons/Icon-144.png</image144x144>
+    <image167x167>assets/icons/Icon-167.png</image167x167>
+  </icon>
+  <iPhone>
+    <InfoAdditions>&lt;key&gt;UIDeviceFamily&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;1&lt;/string&gt;
+                &lt;string&gt;2&lt;/string&gt;
+            &lt;/array&gt;
+            &lt;key&gt;MinimumOSVersion&lt;/key&gt;
+            &lt;string&gt;9.0&lt;/string&gt;
+            &lt;key&gt;GADApplicationIdentifier&lt;/key&gt;
+            &lt;string&gt;ca-app-pub-6964194614288140~1609391311&lt;/string&gt;
+            &lt;key&gt;GADDelayAppMeasurementInit&lt;/key&gt;
+	        &lt;true /&gt;
+            &lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
+            &lt;dict&gt;
+                &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt;
+                &lt;true/&gt;
+                &lt;key&gt;NSAllowsArbitraryLoadsForMedia&lt;/key&gt;
+                &lt;true/&gt;
+                &lt;key&gt;NSAllowsArbitraryLoadsInWebContent&lt;/key&gt;
+                &lt;true/&gt;
+             &lt;/dict&gt;
+             &lt;key&gt;NSUserTrackingUsageDescription&lt;/key&gt;
+	&lt;string&gt;This identifier will be used to deliver personalized ads to you.&lt;/string&gt;
+	&lt;key&gt;SKAdNetworkItems&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+			&lt;string&gt;cstr6suwn9.skadnetwork&lt;/string&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;</InfoAdditions>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+  </iPhone>
+  <android>
+    <manifestAdditions>&lt;manifest android:installLocation=&quot;auto&quot;&gt;
+	&lt;uses-sdk android:minSdkVersion=&quot;21&quot; android:targetSdkVersion=&quot;30&quot; /&gt;
+	&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+	&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
+	&lt;uses-permission android:name=&quot;android.permission.WAKE_LOCK&quot; /&gt;
+	&lt;uses-permission android:name=&quot;com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE&quot; /&gt;
+	&lt;!-- Required by older versions of Google Play services to create IID tokens --&gt;
+	&lt;uses-permission android:name=&quot;com.google.android.c2dm.permission.RECEIVE&quot; /&gt;
+	&lt;application android:appComponentFactory=&quot;androidx.core.app.CoreComponentFactory&quot; android:enabled=&quot;true&quot;&gt;
+		&lt;meta-data android:name=&quot;android.max_aspect&quot; android:value=&quot;2.1&quot; /&gt;
+		&lt;meta-data android:name=&quot;com.google.android.gms.version&quot; android:value=&quot;@integer/google_play_services_version&quot;/&gt;
+                  &lt;meta-data android:name=&quot;com.google.android.gms.games.APP_ID&quot; android:value=&quot;\ 386812349087&quot; /&gt;
+		&lt;activity android:excludeFromRecents=&quot;false&quot; android:hardwareAccelerated=&quot;true&quot;&gt;
+			&lt;intent-filter&gt;
+				&lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;
+				&lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+			&lt;/intent-filter&gt;
+		&lt;/activity&gt;
+		&lt;meta-data android:name=&quot;com.google.android.gms.ads.APPLICATION_ID&quot; android:value=&quot;ca-app-pub-3940256099942544~3347511713&quot; /&gt;
+		&lt;!-- Delay app measurement until MobileAds.initialize() is called. --&gt;
+		&lt;meta-data android:name=&quot;com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT&quot; android:value=&quot;true&quot; /&gt;
+		&lt;receiver android:name=&quot;com.google.android.gms.measurement.AppMeasurementReceiver&quot; android:enabled=&quot;true&quot; android:exported=&quot;false&quot;&gt;&lt;/receiver&gt;
+		&lt;service android:name=&quot;com.google.android.gms.measurement.AppMeasurementService&quot; android:enabled=&quot;true&quot; android:exported=&quot;false&quot; /&gt;
+		&lt;service android:name=&quot;com.google.android.gms.measurement.AppMeasurementJobService&quot; android:enabled=&quot;true&quot; android:exported=&quot;false&quot; android:permission=&quot;android.permission.BIND_JOB_SERVICE&quot; /&gt;
+		&lt;service android:name=&quot;com.google.firebase.components.ComponentDiscoveryService&quot; android:exported=&quot;false&quot;&gt;
+			&lt;meta-data android:name=&quot;com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar&quot; android:value=&quot;com.google.firebase.components.ComponentRegistrar&quot; /&gt;
+		&lt;/service&gt;
+		&lt;activity android:name=&quot;com.google.android.gms.common.api.GoogleApiActivity&quot; android:exported=&quot;false&quot; android:theme=&quot;@android:style/Theme.Translucent.NoTitleBar&quot; /&gt;
+		&lt;meta-data android:name=&quot;com.google.android.gms.version&quot; android:value=&quot;@integer/google_play_services_version&quot; /&gt;
+		&lt;!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. --&gt;
+		&lt;activity android:name=&quot;com.google.android.gms.ads.AdActivity&quot; android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize&quot; android:exported=&quot;false&quot; android:theme=&quot;@android:style/Theme.Translucent&quot; /&gt;
+		&lt;provider android:name=&quot;com.google.android.gms.ads.MobileAdsInitProvider&quot; android:authorities=&quot;com.google.android.gms.ads.mobileadsinitprovider&quot; android:exported=&quot;false&quot; android:initOrder=&quot;100&quot; /&gt;
+	&lt;/application&gt;
+&lt;/manifest&gt;</manifestAdditions>
+  </android>
+  <extensions>
+    <extensionID>com.tuarua.AdMobANE</extensionID>
+    <extensionID>com.tuarua.frekotlin</extensionID>
+    <extensionID>com.google.code.gson.gson</extensionID>
+    <extensionID>androidx.legacy.legacy-support-v4</extensionID>
+    <extensionID>androidx.room.room-runtime</extensionID>
+    <extensionID>androidx.sqlite.sqlite-framework</extensionID>
+    <extensionID>androidx.work.work-runtime</extensionID>
+    <extensionID>com.google.android.gms.play-services-measurement</extensionID>
+    <extensionID>com.google.android.gms.play-services-base</extensionID>
+    <extensionID>com.google.android.gms.play-services-ads-lite</extensionID>
+    <extensionID>com.google.android.ump.user-messaging-platform</extensionID>
+    <extensionID>com.google.android.gms.play-services-games</extensionID>
+    <extensionID>com.google.android.gms.play-services-auth</extensionID>
+    <extensionID>com.marpies.ane.gameServices</extensionID>
+    <extensionID>com.distriqt.IDFA</extensionID>
+    <extensionID>com.distriqt.Core</extensionID>
+  </extensions>
+</application>
