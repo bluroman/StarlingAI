@@ -26,26 +26,20 @@
             <entry library-id="f512a274-ae59-4235-8d9f-bfc189237d5f">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="744cb73c-eb85-4402-9917-a470ec6360e3">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="379501ce-4c64-4a62-897a-8e9e2f7da1f6">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-name="extensions" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="33_1_1_345" />
+          <sdk name="33_1_1_929" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
+        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
           </files-to-package>
-          <AirSigningOptions key-alias="bluroman" keystore-path="$USER_HOME$/Work/BubblySpaceProjects/hoonnam.jks" keystore-type="JKS" use-temp-certificate="false" />
+          <AirSigningOptions arch="armv8" key-alias="bluroman" keystore-path="$USER_HOME$/Work/BubblySpaceProjects/hoonnam.jks" keystore-type="JKS" use-temp-certificate="false" />
         </packaging-android>
         <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
           <files-to-package>
@@ -54,7 +48,7 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets/icons/Assets.car" path-in-package="Assets.car" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Frameworks" path-in-package="Frameworks" />
           </files-to-package>
-          <AirSigningOptions keystore-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/DeveloperCer.p12" provisioning-profile-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/BubblySpace_Dev_Profile (1).mobileprovision" />
+          <AirSigningOptions keystore-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/dev_cer.p12" provisioning-profile-path="$USER_HOME$/Work/BubblySpaceProjects/CertificateNProvisionIOS/BubblySpace_Dev_Profile.mobileprovision" />
         </packaging-ios>
       </configuration>
     </configurations>
@@ -66,7 +60,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="33_1_1_345" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="33_1_1_929" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Starling-Framework" level="application" />
     <orderEntry type="library" exported="" name="Starling-Extension-Particle-System" level="application" />
@@ -127,26 +121,6 @@
         <properties id="f512a274-ae59-4235-8d9f-bfc189237d5f" />
         <CLASSES>
           <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/20210111/com.marpies.ane.gameServices.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="744cb73c-eb85-4402-9917-a470ec6360e3" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_basement.ane!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="379501ce-4c64-4a62-897a-8e9e2f7da1f6" />
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Work/BubblySpaceProjects/common-dependencies-ANE-master/googlePlayServices/googlePlayServices_games.ane!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

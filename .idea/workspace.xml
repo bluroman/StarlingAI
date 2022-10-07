@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AirPackageProjectParameters">
+    <option name="iosPackageType" value="Apple App Store distribution" />
+    <option name="iosFastPackaging" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="323c013b-7fba-495a-8405-0fc71de7b873" name="Default Changelist" comment="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented">
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FlashRuntimeExtensions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/arm64.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/Project/armv7.swiftsourceinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7-apple-ios.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7.swiftdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/armv7.swiftmodule" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Main-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StarlingAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StarlingAI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCore.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreGraphics.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftCoreImage.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftCoreImage.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftDarwin.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftDarwin.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftDispatch.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftDispatch.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftMetal.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftMetal.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftObjectiveC.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftQuartzCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftQuartzCore.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftUIKit.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftUIKit.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frameworks/libswiftos.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/libswiftos.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Root.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Root.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/AdMobManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AdMobManager.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GameCenterManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GameCenterManager.as" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="AIR32_For_IOS" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1fgIirVO3zQb91r5kOkjoxnFUsk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Frameworks" />
+      <recent name="$PROJECT_DIR$/extensions" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Frameworks" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StarlingAI" type="FlashRunConfigurationType" nameIsGenerated="true">
+      <option name="BCName" value="StarlingAI" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="IOS" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="iPad" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="false" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="iOSDevice" />
+      <option name="moduleName" value="StarlingAI" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType">
+      <option name="BCName" value="StarlingAI" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="StarlingAI" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="323c013b-7fba-495a-8405-0fc71de7b873" name="Default Changelist" comment="" />
+      <created>1554873889258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554873889258</updated>
+      <workItem from="1554873890355" duration="4629000" />
+      <workItem from="1554937934893" duration="2410000" />
+      <workItem from="1555300142988" duration="684000" />
+      <workItem from="1596633444038" duration="27000" />
+      <workItem from="1596633483074" duration="628000" />
+      <workItem from="1596639185460" duration="2832000" />
+      <workItem from="1596673000151" duration="3145000" />
+      <workItem from="1597503114573" duration="465000" />
+      <workItem from="1599986227716" duration="2366000" />
+      <workItem from="1600009987553" duration="1344000" />
+      <workItem from="1605351396756" duration="7632000" />
+      <workItem from="1605406492546" duration="4161000" />
+      <workItem from="1605454191146" duration="4730000" />
+      <workItem from="1605464052602" duration="19000" />
+      <workItem from="1610162569036" duration="300000" />
+      <workItem from="1610162960255" duration="180000" />
+      <workItem from="1610163692069" duration="69000" />
+      <workItem from="1610163779079" duration="3584000" />
+      <workItem from="1610347387170" duration="1220000" />
+      <workItem from="1610357621622" duration="5233000" />
+      <workItem from="1610369062659" duration="11428000" />
+      <workItem from="1610407234773" duration="10117000" />
+      <workItem from="1610640517665" duration="87000" />
+      <workItem from="1620263837108" duration="523000" />
+      <workItem from="1620264438633" duration="5088000" />
+      <workItem from="1643723251256" duration="400000" />
+      <workItem from="1643724152887" duration="1707000" />
+      <workItem from="1643805984176" duration="1247000" />
+      <workItem from="1644036713130" duration="201000" />
+      <workItem from="1644584433026" duration="35000" />
+      <workItem from="1647065478266" duration="712000" />
+      <workItem from="1649073779139" duration="90000" />
+      <workItem from="1649073895266" duration="4384000" />
+      <workItem from="1649224142751" duration="2917000" />
+      <workItem from="1649688232899" duration="1279000" />
+      <workItem from="1650428817059" duration="71000" />
+      <workItem from="1650428908893" duration="11821000" />
+      <workItem from="1650460395179" duration="3022000" />
+      <workItem from="1650494049135" duration="5299000" />
+      <workItem from="1650500241909" duration="1298000" />
+      <workItem from="1650501753559" duration="603000" />
+      <workItem from="1650508549650" duration="6077000" />
+      <workItem from="1650717179970" duration="1976000" />
+      <workItem from="1650783898858" duration="1002000" />
+      <workItem from="1652184811297" duration="48000" />
+      <workItem from="1652184884828" duration="155000" />
+      <workItem from="1663919317960" duration="141000" />
+      <workItem from="1663920188792" duration="959000" />
+      <workItem from="1664183810254" duration="5969000" />
+      <workItem from="1665051976446" duration="702000" />
+      <workItem from="1665055020313" duration="5838000" />
+      <workItem from="1665093994825" duration="1773000" />
+      <workItem from="1665101168464" duration="1783000" />
+    </task>
+    <task id="LOCAL-00001" summary="Run Successfully First branch on ios">
+      <created>1554938111012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554938111013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Run Successfully Second branch on ios">
+      <created>1605408633291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605408633291</updated>
+    </task>
+    <task id="LOCAL-00003" summary="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented">
+      <created>1610413670026</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610413670026</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="AIR33_For_IOS" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Run Successfully First branch on ios" />
+    <MESSAGE value="Run Successfully Second branch on ios" />
+    <MESSAGE value="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented" />
+    <option name="LAST_COMMIT_MESSAGE" value="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented" />
+  </component>
+</project>

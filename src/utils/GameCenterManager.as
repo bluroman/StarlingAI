@@ -124,12 +124,12 @@ public class GameCenterManager {
 
     private function onGameServicesAuthSuccess( event:GSAuthEvent ):void {
         trace("User authenticated:", event.player);
-        if (os.isIos)
-            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_IOS);
-        else if (SystemUtil.platform == "AND")
-            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_AND);
-        else
-            trace('Not support leaderboard native ui');
+//        if (os.isIos)
+//            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_IOS);
+//        else if (SystemUtil.platform == "AND")
+//            GameServices.leaderboards.showNativeUI(Constants.LEADERBOARD_ID_AND);
+//        else
+//            trace('Not support leaderboard native ui');
     }
 
     private function onGameServicesAuthError( event:GSAuthEvent ):void {

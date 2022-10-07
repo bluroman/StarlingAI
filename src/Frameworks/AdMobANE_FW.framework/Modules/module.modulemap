@@ -1,0 +1,11 @@
+framework module AdMobANE_FW {
+  umbrella header "AdMobANE_FW.h"
+
+  export *
+  module * { export * }
+}
+
+module AdMobANE_FW.Swift {
+    header "AdMobANE_FW-Swift.h"
+    requires objc
+}

@@ -5,6 +5,13 @@ import com.tuarua.admob.AdSize;
 import com.tuarua.admob.MaxAdContentRating;
 import com.tuarua.admob.Targeting;
 import com.tuarua.fre.ANEError;
+import com.tuarua.ump.ConsentDebugGeography;
+import com.tuarua.ump.ConsentDebugSettings;
+import com.tuarua.ump.ConsentFormStatus;
+import com.tuarua.ump.ConsentInformation;
+import com.tuarua.ump.ConsentRequestParameters;
+import com.tuarua.ump.ConsentStatus;
+import com.tuarua.ump.ConsentType;
 
 import flash.desktop.NativeApplication;
 
@@ -20,6 +27,7 @@ public class AdMobManager extends starling.display.Sprite {
     private var adMobANE:AdMob;
     private var rewarded:Boolean;
     private var _ship:SpaceShip;
+    private var consentInformation:ConsentInformation;
     public function AdMobManager() {
         trace("System:" + os.isIos);
         trace("System Name" + Capabilities.os.toLowerCase());
@@ -31,17 +39,42 @@ public class AdMobManager extends starling.display.Sprite {
             adMobANE.addEventListener(AdMobEvent.ON_CLICKED, onAdClicked);
             adMobANE.addEventListener(AdMobEvent.ON_CLOSED, onAdClosed);
             adMobANE.addEventListener(AdMobEvent.ON_IMPRESSION, onAdImpression);
-            adMobANE.addEventListener(AdMobEvent.ON_LEFT_APPLICATION, onAdLeftApplication);
+            //adMobANE.addEventListener(AdMobEvent.ON_LEFT_APPLICATION, onAdLeftApplication);
             adMobANE.addEventListener(AdMobEvent.ON_LOAD_FAILED, onAdLoadFailed);
             adMobANE.addEventListener(AdMobEvent.ON_LOADED, onAdLoaded);
             adMobANE.addEventListener(AdMobEvent.ON_OPENED, onAdOpened);
-            adMobANE.addEventListener(AdMobEvent.ON_VIDEO_STARTED, onVideoStarted);
-            adMobANE.addEventListener(AdMobEvent.ON_VIDEO_COMPLETE, onVideoComplete);
+            //adMobANE.addEventListener(AdMobEvent.ON_VIDEO_STARTED, onVideoStarted);
+            //adMobANE.addEventListener(AdMobEvent.ON_VIDEO_COMPLETE, onVideoComplete);
             adMobANE.addEventListener(AdMobEvent.ON_REWARDED, onRewarded);
-            adMobANE.init(0.5, true, Starling.current.contentScaleFactor, true);
-            //adMobANE.init(Constants.ADMOB_APP_ID, 0.5, true, Starling.current.contentScaleFactor);
+            trace("adMobANE event listener end");
+            trace("adMobANE consent start");
+
+
+            consentInformation = ConsentInformation.shared();
+
+            // In real app we don't reset everytime. This is for testing development.
+            consentInformation.reset();
+            var parameters:ConsentRequestParameters = new ConsentRequestParameters();
+            parameters.tagForUnderAgeOfConsent = false;
+//            var vecDevices:Vector.<String> = new <String>[];
+//            vecDevices.push("9b6d1bfa1701ec25be4b51b38eed6e897c3a7a65"); //my iPad Mini
+            var debugSettings:ConsentDebugSettings = new ConsentDebugSettings();
+            debugSettings.geography = ConsentDebugGeography.EEA;
+            parameters.appId = "ca-app-pub-6964194614288140~1609391311";
+
+            // on iOS to retrieve your deviceID run: adt -devices -platform iOS
+            debugSettings.testDeviceIdentifiers.push("00008110-000659C00A87801E");
+            parameters.debugSettings = debugSettings;
+            consentInformation.requestConsentInfoUpdate(parameters, function (error:Error):void {
+                if (error != null) {
+                    trace("requestConsentInfoUpdate error:", error.message);
+                    initAdMob(false);
+                    return;
+                }
+                handleConsentUpdate();
+            })
+            //adMobANE.init(0.5, true, Starling.current.contentScaleFactor, true);
             rewarded = false;
-            trace("adMobANE init end");
             //on iOS to retrieve your deviceID run: adt -devices -platform iOS
 //            var vecDevices:Vector.<String> = new <String>[];
 //            vecDevices.push("09872C13E51671E053FC7DC8DFC0C689"); //my Android Nexus
@@ -49,6 +82,45 @@ public class AdMobManager extends starling.display.Sprite {
 //            vecDevices.push("9b6d1bfa1701ec25be4b51b38eed6e897c3a7a65"); //my iPad Mini
 //            adMobANE.testDevices = vecDevices;
         }
+    }
+    private function handleConsentUpdate():void {
+        trace("consentInformation.consentType: ", consentInformation.consentType);
+
+        switch (consentInformation.consentStatus) {
+            case ConsentStatus.unknown:
+                trace("ConsentStatus.unknown");
+                return;
+            case ConsentStatus.obtained:
+                trace("User consent obtained. Personalization not defined.");
+                initAdMob(consentInformation.consentType == ConsentType.personalized, true);
+                break;
+            case ConsentStatus.required:
+                trace("User consent required but not yet obtained.");
+                showConsentForm();
+                break;
+            case ConsentStatus.notRequired:
+                trace("User consent not required. For example, the user is not in the EEA or UK.");
+                initAdMob(true, false);
+                break;
+        }
+    }
+    private function showConsentForm():void {
+        if (consentInformation.formStatus === ConsentFormStatus.available) {
+            consentInformation.showConsentForm(function (error:Error):void {
+                if (error != null) {
+                    trace("showConsentForm error:", error.message);
+                    initAdMob(false);
+                    return;
+                }
+                handleConsentUpdate();
+            });
+        }
+    }
+    private function initAdMob(personalized:Boolean, inEU:Boolean = false):void {
+        trace("Why session terminated");
+        adMobANE.init(0.5, true, Starling.current.contentScaleFactor, personalized);
+        trace("adMobANE init end");
+        //initMenu(inEU);
     }
     /**
      * It's very important to call adMobANE.dispose(); when the app is exiting.

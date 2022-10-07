@@ -4,7 +4,7 @@
     <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
     <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
     <name>BubblySpace</name> <!-- The name that is displayed below the app icon. -->
-    <versionNumber>3.1.2</versionNumber> <!-- Required. -->
+    <versionNumber>3.3.6</versionNumber> <!-- Required. -->
 
     <!-- Settings for the application's initial window. Required. -->
     <initialWindow>
@@ -63,6 +63,8 @@
             <string>9.0</string>
             <key>GADApplicationIdentifier</key>
             <string>ca-app-pub-6964194614288140~1609391311</string>
+            <key>GADDelayAppMeasurementInit</key>
+	        <true />
             <key>NSAppTransportSecurity</key>
             <dict>
                 <key>NSAllowsArbitraryLoads</key>
@@ -95,7 +97,7 @@
     <!-- Android specific capabilities -->
     <android>
         <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -169,6 +171,9 @@
         <extensionID>com.tuarua.frekotlin</extensionID>
         <extensionID>com.google.code.gson.gson</extensionID>
         <extensionID>androidx.legacy.legacy-support-v4</extensionID>
+        <extensionID>androidx.room.room-runtime</extensionID>
+        <extensionID>androidx.sqlite.sqlite-framework</extensionID>
+        <extensionID>androidx.work.work-runtime</extensionID>
         <extensionID>com.google.android.gms.play-services-measurement</extensionID>
         <extensionID>com.google.android.gms.play-services-base</extensionID>
         <extensionID>com.google.android.gms.play-services-ads-lite</extensionID>
@@ -176,7 +181,10 @@
         <extensionID>com.google.android.gms.play-services-games</extensionID>
         <extensionID>com.google.android.gms.play-services-auth</extensionID>
         <extensionID>com.marpies.ane.gameServices</extensionID>
-<!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>-->
+        <extensionID>com.distriqt.IDFA</extensionID>
+        <extensionID>com.distriqt.Core</extensionID>
+<!--        <extensionID>androidx.core</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>-->
 <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>-->
 <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>-->
 <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.games</extensionID>-->

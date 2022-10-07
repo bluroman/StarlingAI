@@ -30,6 +30,9 @@ import ui.FeathersDialog;
 import utils.AdMobManager;
 
 import utils.GameCenterManager;
+import com.distriqt.extension.idfa.IDFA;
+import com.distriqt.extension.idfa.TrackingAuthorisationStatus;
+import com.distriqt.extension.idfa.events.IDFAEvent;
 
 import utils.MenuButton;
 import utils.ScoreKeeper;
@@ -84,11 +87,36 @@ import utils.os;
                     XML(new FontXml()));
 
             TextField.registerCompositor(font,Constants.DEFAULT_FONT_2);
+            if(IDFA.isSupported)
+            {
+                trace("IDFA Supported");
+                IDFA.service.addEventListener( IDFAEvent.COMPLETE, idfaCompleteHandler );
+                IDFA.service.requestAuthorisation(
+                        function ( status:String ):void
+                        {
+                            if (status == TrackingAuthorisationStatus.AUTHORISED)
+                            {
+                                IDFA.service.getIDFA();
+                            }
+                        }
+                );
+            }
+            else
+            {
+                sgamecenterManager = new GameCenterManager();
+                sadmobManager = new AdMobManager();
+            }
 
+        }
+        function idfaCompleteHandler( event:IDFAEvent ):void
+        {
+            trace( "identifier: " + event.identifier );
+            trace( "isLimitAdTrackingEnabled: " + event.isLimitAdTrackingEnabled );
             sgamecenterManager = new GameCenterManager();
             sadmobManager = new AdMobManager();
         }
-        
+
+
         public function start(assets:AssetManager):void
         {
             // the asset manager is saved as a static variable; this allows us to easily access
