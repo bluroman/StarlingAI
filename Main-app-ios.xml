@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/33.1">
+
+    <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
+    <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
+    <name>BubblySpace</name> <!-- The name that is displayed below the app icon. -->
+    <versionNumber>3.4.0</versionNumber> <!-- Required. -->
+
+    <!-- Settings for the application's initial window. Required. -->
+    <initialWindow>
+        <!-- The main SWF or HTML file of the application. Required. -->
+        <content>Main.swf</content>
+
+        <!-- The aspect ratio ("portrait", "landscape", or "any"). Optional. -->
+        <aspectRatio>landscape</aspectRatio>
+
+        <!-- Whether the app will begin auto-orienting on launch. Optional. Default false -->
+        <autoOrients>true</autoOrients>
+
+        <!-- Whether the app launches in full screen. Optional. Mobile only. Default false -->
+        <!-- (On iOS, this decides if the StatusBar is visible or not.) -->
+        <fullScreen>true</fullScreen>
+
+        <!-- Either auto, cpu, gpu, or direct. Default auto -->
+        <renderMode>direct</renderMode>
+
+        <!-- Whether direct mode allocates storage for depth and stencil buffers. Default false -->
+        <depthAndStencil>true</depthAndStencil>
+
+        <!-- Whether or not to pan when a soft keyboard is raised or lowered (either "pan" or "none").  Optional.  Defaults "pan." -->
+        <!-- <softKeyboardBehavior></softKeyboardBehavior> -->
+    </initialWindow>
+
+    <!-- Languages supported by application. Only these languages can be specified. -->
+    <!-- <supportedLanguages>en de cs es fr it ja ko nl pl pt ru sv tr zh</supportedLanguages> -->
+
+    <!-- The icon the system uses for the application. Optional. -->
+    <!-- Place the icons in a 'source path' (e.g. in the 'src' directory). -->
+    <!-- iPhone: 57x57, iPhone HD: 114x114, iPad: 72x72, iPad HD: 144x144 -->
+    <icon>
+        <image57x57>assets/icons/Icon.png</image57x57>
+        <image72x72>assets/icons/Icon-72.png</image72x72>
+        <image76x76>assets/icons/Icon-76.png</image76x76>
+        <image120x120>assets/icons/Icon-120.png</image120x120>
+        <image152x152>assets/icons/Icon-152.png</image152x152>
+        <image114x114>assets/icons/Icon@2x.png</image114x114>
+        <image144x144>assets/icons/Icon-144.png</image144x144>
+        <image167x167>assets/icons/Icon-167.png</image167x167>
+    </icon>
+
+    <!-- iOS specific capabilities -->
+    <iPhone>
+        <!-- A list of plist key/value pairs to be added to the application Info.plist -->
+        <!-- UIDeviceFamily: 1 - iPhone/iPod Touch; 2 - iPad; both: universal app -->
+
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <string>1</string>
+                <string>2</string>
+            </array>
+            <key>MinimumOSVersion</key>
+            <string>9.0</string>
+            <key>GADApplicationIdentifier</key>
+            <string>ca-app-pub-6964194614288140~1609391311</string>
+            <key>GADDelayAppMeasurementInit</key>
+	        <true />
+            <key>NSAppTransportSecurity</key>
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsForMedia</key>
+                <true/>
+                <key>NSAllowsArbitraryLoadsInWebContent</key>
+                <true/>
+             </dict>
+             <key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to deliver personalized ads to you.</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
+        ]]></InfoAdditions>
+        <!--        <Entitlements><![CDATA[-->
+        <!--            <key>aps-environment</key>-->
+        <!--            <string>production</string>-->
+        <!--        ]]></Entitlements>-->
+
+        <!-- Display Resolution for the app ("standard" or "high"). Optional. Default "standard" -->
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <!--<assetsCar>Assets.car</assetsCar>-->
+    </iPhone>
+    <extensions>
+        <!--    <extensionID>com.tuarua.frekotlin</extensionID>-->
+        <!--    &lt;!&ndash;<extensionID>com.google.android.gms.play-services-base</extensionID>&ndash;&gt;-->
+        <!--    &lt;!&ndash;<extensionID>com.google.android.gms.play-services-ads-lite</extensionID>&ndash;&gt;-->
+        <!--    <extensionID>com.android.support.support-v4</extensionID>-->
+        <!--    <extensionID>com.google.code.gson.gson</extensionID>-->
+        <!--        <extensionID>com.tuarua.AdMobANE</extensionID>-->
+        <extensionID>com.tuarua.AdMobANE</extensionID>
+        <extensionID>com.tuarua.frekotlin</extensionID>
+        <extensionID>com.marpies.ane.gameServices</extensionID>
+        <extensionID>com.distriqt.IDFA</extensionID>
+        <extensionID>com.distriqt.Core</extensionID>
+        <!--        <extensionID>androidx.core</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.base</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.games</extensionID>-->
+        <!--        <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.tasks</extensionID>-->
+    </extensions>
+
+</application>

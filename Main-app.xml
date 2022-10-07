@@ -4,7 +4,7 @@
     <id>com.bluroman.BubblySpace</id> <!-- Bundle Identifier. Required. -->
     <filename>BubblySpace</filename> <!-- Used as the filename for the application. Required. -->
     <name>BubblySpace</name> <!-- The name that is displayed below the app icon. -->
-    <versionNumber>3.3.6</versionNumber> <!-- Required. -->
+    <versionNumber>3.4.0</versionNumber> <!-- Required. -->
 
     <!-- Settings for the application's initial window. Required. -->
     <initialWindow>

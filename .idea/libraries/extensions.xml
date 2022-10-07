@@ -1,10 +1,7 @@
 <component name="libraryTable">
   <library name="extensions" type="flex">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/extensions" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/extensions" recursive="false" />
   </library>
 </component>

@@ -9,24 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="323c013b-7fba-495a-8405-0fc71de7b873" name="Default Changelist" comment="if onReward canceled then lose screen will be presented. if cancel reward then interstitial will be presented">
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/AdMobANE_FW" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW-Swift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Headers/AdMobANE_FW.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/AdMobANE_FW.swiftmodule/armv7-apple-ios.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/AdMobANE_FW.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/FreSwift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FlashRuntimeExtensions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift-iOS-Swift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Headers/FreSwift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/FreSwift.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frameworks/FreSwift.framework/Modules/module.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/AdMobManager.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AdMobManager.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main-app-ios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/extensions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/extensions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Main-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StarlingAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StarlingAI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceShip.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceShip.as" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Frameworks" />

@@ -26,7 +26,16 @@
             <entry library-id="f512a274-ae59-4235-8d9f-bfc189237d5f">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="extensions" library-level="project">
+            <entry library-id="5fcbb9b8-0bb0-4fdf-ae5b-8a13b795425f">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="6e7ffa1b-cdbf-448d-95c1-d869b036d000">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="f739a314-ad67-4f75-a887-ea63fe09d6e2">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="2ec7f324-0545-427c-8929-cfb091ee626e">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -41,7 +50,7 @@
           </files-to-package>
           <AirSigningOptions arch="armv8" key-alias="bluroman" keystore-path="$USER_HOME$/Work/BubblySpaceProjects/hoonnam.jks" keystore-type="JKS" use-temp-certificate="false" />
         </packaging-android>
-        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app-ios.xml" package-file-name="Main">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/assets" path-in-package="assets" />
@@ -126,6 +135,45 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="extensions" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="5fcbb9b8-0bb0-4fdf-ae5b-8a13b795425f" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/extensions/AdMobANE.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="6e7ffa1b-cdbf-448d-95c1-d869b036d000" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/extensions/com.distriqt.Core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="f739a314-ad67-4f75-a887-ea63fe09d6e2" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/extensions/com.distriqt.IDFA.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="2ec7f324-0545-427c-8929-cfb091ee626e" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/extensions/com.tuarua.frekotlin.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

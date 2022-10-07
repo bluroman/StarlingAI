@@ -182,11 +182,12 @@ public class SpaceShip extends Sprite {
                 quad.alpha = 0.75;
                 return quad;
             });*/
-            PopUpManager.addPopUp(
-                    new Dialog("If you see this video, 1 extra life obtained", "Continue?",
-                            [Dialog.BTN_CANCEL, Dialog.BTN_OK], dialogCallback)
-            );
+//            PopUpManager.addPopUp(
+//                    new Dialog("If you see this video, 1 extra life obtained", "Continue?",
+//                            [Dialog.BTN_CANCEL, Dialog.BTN_OK], dialogCallback)
+//            );
             //dispatchEventWith(Menu.LOSE_SCREEN, true);
+            Root.admobManager.onLoadInterstitial(this);
         }
     }
     public function LoseScreen():void
